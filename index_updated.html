@@ -1,0 +1,2086 @@
+<!DOCTYPE html>
+<html lang="ko">
+<link rel="canonical" href="https://집밥.kr/" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="naver-site-verification" content="54d73b72f405654221a6c9374ff45ba93d68da28" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>부천 · 인천 · 서울 단체급식 | 웰빙푸드 이동급식 catering 집밥 한식 뷔페 · 도시락 · 출장뷔페</title>
+  <!-- 기본 메타 -->
+  <meta name="description" content="부천·인천·서울 기업·학교·공장 단체급식, 도시락, 출장뷔페 전문 웰빙푸드. 신선한 집밥 스타일 한식으로 상시 급식과 행사 뷔페를 제공합니다." />
+  <meta name="keywords" content="웰빙푸드, 집밥 한식 뷔페, 단체급식, 부천 단체급식, 도시락, 출장뷔페, 공장 구내식당, 학교 급식, 기업 단체급식" />
+  <meta name="author" content="웰빙푸드" />
+
+  <!-- Open Graph (카카오톡, 네이버, 페북 공유용) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="웰빙푸드 | 집밥 한식 뷔페 · 단체급식" />
+  <meta property="og:description" content="기업·공장·관공서·학교 단체급식부터 행사·세미나 출장뷔페까지, 집밥 스타일 한식 뷔페 전문 웰빙푸드입니다." />
+  <meta property="og:image" content="https://집밥.kr/hero-1.jpg?type=w773" />
+  <meta property="og:image" content="https://집밥.kr/hero-1.webp?type=w773" />
+  <meta property="og:url" content="https://집밥.kr" />
+
+  <!-- 트위터 카드 -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="웰빙푸드 | 집밥 한식 뷔페 · 단체급식" />
+  <meta name="twitter:description" content="부천 인천 서울서부 기반 집밥 한식 단체급식·도시락·출장뷔페 전문 웰빙푸드." />
+  <meta name="twitter:image" content="https://집밥.kr/hero-1.jpg?type=w773" />
+  
+  <!-- Google Search Console -->
+  <meta name="google-site-verification" content="efccca084bb227ed" />
+  <style>
+    :root {
+      --color-main: #4caf50;
+      --color-main-dark: #2e7d32;
+      --color-accent: #ffb300;
+      --color-bg: #f9f9f5;
+      --color-border: #e0e0dc;
+      --color-text: #333333;
+      --max-width: 1080px;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    h1, h2, h3, p, button, a {
+      word-break: keep-all;
+    }
+
+    /* INTRO SPLASH */
+    #intro {
+      position: fixed;
+      inset: 0;
+      z-index: 999;
+      background: radial-gradient(circle at top left, #4caf50 0%, #2e7d32 40%, #1b1f1a 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      text-align: center;
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      animation: introBgShift 6s ease-in-out infinite alternate;
+    }
+
+    #intro.hide {
+      opacity: 0;
+      transform: scale(1.03);
+      pointer-events: none;
+    }
+
+    .intro-orbit {
+      width: 280px;
+      height: 280px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: introOrbit 7s linear infinite;
+    }
+
+    .intro-droplet {
+      width: 310px;
+      height: 310px;
+      border-radius: 55% 60% 70% 45% / 55% 45% 65% 60%;
+      background: radial-gradient(circle at 30% 20%, #ffe082 0%, #ffb300 40%, #ffcc80 60%, #ffffff 100%);
+      box-shadow: 0 28px 55px rgba(0, 0, 0, 0.38);
+      position: relative;
+      overflow: hidden;
+      animation: introBlob 4.5s ease-in-out infinite alternate;
+    }
+
+    .intro-droplet::before {
+      content: "";
+      position: absolute;
+      inset: 8%;
+      border-radius: inherit;
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      opacity: 0.8;
+    }
+
+    .intro-droplet-glow {
+      position: absolute;
+      inset: -30%;
+      background: radial-gradient(circle at 10% 0%, rgba(255, 255, 255, 0.9), transparent 55%),
+                  radial-gradient(circle at 80% 100%, rgba(255, 183, 77, 0.8), transparent 60%);
+      filter: blur(6px);
+      mix-blend-mode: screen;
+      opacity: 0.9;
+      animation: introGlow 4s ease-in-out infinite alternate;
+    }
+
+    .intro-inner {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .intro-kor {
+      font-weight: 900;
+      font-size: 2.1rem;
+      letter-spacing: 0.16em;
+      text-indent: 0.16em;
+      color: #2e7d32;
+      text-shadow: 0 3px 6px rgba(255, 255, 255, 0.7);
+      opacity: 0;
+      transform: scale(0.6) translateY(16px);
+      animation: introTextGrow 1.8s cubic-bezier(0.22, 0.73, 0.29, 1.01) 0.2s forwards;
+    }
+
+    .intro-en {
+      margin-top: 0.25rem;
+      font-size: 0.8rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #4e342e;
+      opacity: 0;
+      transform: translateY(8px);
+      animation: introTextFade 1.2s ease-out 0.9s forwards;
+    }
+
+    .intro-tagline {
+      margin-top: 0.75rem;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #2e7d32;
+      padding: 0.55rem 1.3rem;
+      position: relative;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 55% 45% 60% 50% / 50% 60% 45% 55%;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+      border: 2px solid rgba(76, 175, 80, 0.65);
+      animation: taglinePop 1.3s cubic-bezier(0.25, 0.7, 0.3, 1.2) forwards;
+      transform: scale(0.7);
+      opacity: 0;
+    }
+
+    .intro-tagline::before {
+      content: "";
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      top: -6px;
+      right: -5px;
+      background: #a5d6a7;
+      border-radius: 60% 40% 65% 35% / 55% 50% 45% 60%;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+    }
+
+    .intro-tagline::after {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      bottom: -5px;
+      left: -3px;
+      background: #c5e1a5;
+      border-radius: 50% 60% 40% 60%;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.18);
+    }
+
+   .intro-skip {
+  /* 위치 관련 속성 제거 */
+  position: static;
+  bottom: auto;
+  right: auto;
+  transform: none;
+
+  /* 물방울 아래 여백 */
+  margin-top: 1.8rem;
+
+  padding: 0.45rem 1.2rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background: rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  font-size: 0.85rem;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.intro-skip::before {
+  content: "⏩";
+  font-size: 0.9rem;
+}
+
+.intro-skip:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+    @keyframes taglinePop {
+      0% {
+        transform: scale(0.7) translateY(6px);
+        opacity: 0;
+      }
+      60% {
+        transform: scale(1.18) translateY(0);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes introBgShift {
+      0% {
+        background: radial-gradient(circle at top left, #4caf50 0%, #2e7d32 40%, #1b1f1a 100%);
+      }
+      50% {
+        background: radial-gradient(circle at top right, #66bb6a 0%, #43a047 40%, #1b1f1a 100%);
+      }
+      100% {
+        background: radial-gradient(circle at bottom, #2e7d32 0%, #1b5e20 40%, #000000 100%);
+      }
+    }
+
+    @keyframes introOrbit {
+      0% {
+        transform: rotate(0deg) translateY(0);
+      }
+      50% {
+        transform: rotate(3deg) translateY(-6px);
+      }
+      100% {
+        transform: rotate(-3deg) translateY(4px);
+      }
+    }
+
+    @keyframes introBlob {
+      0% {
+        border-radius: 55% 60% 70% 45% / 55% 45% 65% 60%;
+        transform: scale(1);
+      }
+      50% {
+        border-radius: 60% 50% 55% 65% / 60% 55% 60% 50%;
+        transform: scale(1.04) translateY(-4px);
+      }
+      100% {
+        border-radius: 48% 70% 60% 50% / 50% 50% 70% 60%;
+        transform: scale(1.07) translateY(-8px);
+      }
+    }
+
+    @keyframes introGlow {
+      0% {
+        opacity: 0.7;
+        transform: translate3d(0, 0, 0) scale(1);
+      }
+      100% {
+        opacity: 1;
+        transform: translate3d(6px, -4px, 0) scale(1.08);
+      }
+    }
+
+    @keyframes introTextGrow {
+      0% {
+        opacity: 0;
+        transform: scale(0.6) translateY(16px);
+        letter-spacing: 0.24em;
+      }
+      60% {
+        opacity: 1;
+        transform: scale(1.15) translateY(0);
+        letter-spacing: 0.3em;
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+        letter-spacing: 0.18em;
+      }
+    }
+
+    @keyframes introTextFade {
+      from {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* HEADER + NAV */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background-color: rgba(249, 249, 245, 0.96);
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .nav-container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0.6rem 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-weight: 800;
+      font-size: 1.1rem;
+      letter-spacing: 0.06em;
+      color: var(--color-main-dark);
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+
+    .logo span.en {
+      font-size: 0.75rem;
+      opacity: 0.8;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.2rem;
+      font-size: 0.95rem;
+    }
+
+    nav a {
+      position: relative;
+      padding-bottom: 0.2rem;
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background-color: var(--color-main);
+      transition: width 0.2s ease-out;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: all 0.2s ease-out;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background-color: var(--color-main);
+      color: #ffffff;
+      border-color: var(--color-main-dark);
+      font-weight: 600;
+      box-shadow: 0 4px 0 rgba(28, 94, 32, 0.8);
+    }
+
+    .btn-primary:active {
+      transform: translateY(2px);
+      box-shadow: 0 1px 0 rgba(28, 94, 32, 0.8);
+    }
+
+    .btn-outline {
+      background-color: #ffffff;
+      color: var(--color-main-dark);
+      border-color: var(--color-main);
+    }
+
+    .btn-outline:active {
+      transform: translateY(2px);
+      box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+    }
+
+    .nav-menu-toggle {
+      display: none;
+      border: none;
+      background: transparent;
+      font-size: 1.4rem;
+      cursor: pointer;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        position: fixed;
+        top: 56px;
+        left: 0;
+        right: 0;
+        background-color: rgba(249, 249, 245, 0.98);
+        flex-direction: column;
+        padding: 1rem 1.25rem 1.5rem;
+        border-bottom: 1px solid var(--color-border);
+        transform: translateY(-100%);
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.25s ease-out;
+      }
+
+      nav ul.open {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+      .nav-actions {
+        display: none;
+      }
+
+      .nav-menu-toggle {
+        display: block;
+      }
+    }
+
+    main {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.25rem 4rem;
+      overflow-x: hidden;
+    }
+
+    section {
+      padding: 3.5rem 0;
+      scroll-margin-top: 80px;
+    }
+
+    .section-heading {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--color-main-dark);
+    }
+
+    .section-subheading {
+      font-size: 0.95rem;
+      color: #666666;
+      margin-bottom: 2rem;
+    }
+
+    /* HERO */
+    .hero {
+      display: grid;
+      grid-template-columns: 1.15fr 1fr;
+      gap: 2.2rem;
+      align-items: center;
+      padding-top: 2.2rem;
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      background-color: rgba(76, 175, 80, 0.08);
+      color: var(--color-main-dark);
+      margin-bottom: 1rem;
+    }
+
+    .hero-title {
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin-bottom: 0.8rem;
+      line-height: 1.25;
+      max-width: 18ch;
+      color: var(--color-text);
+    }
+
+    .hero-title .highlight {
+      color: var(--color-main-dark);
+    }
+
+    .hero-subtitle {
+      font-size: 1rem;
+      color: #555555;
+      margin-bottom: 1.4rem;
+      max-width: 32ch;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 0.7rem;
+      margin-bottom: 1.1rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-meta {
+      font-size: 0.85rem;
+      color: #777777;
+    }
+
+    .hero-meta strong {
+      color: var(--color-main-dark);
+    }
+
+    .hero-image {
+      position: relative;
+      border-radius: 24px;
+      overflow: hidden;
+      min-height: 260px;
+      box-shadow: 0 18px 35px rgba(0, 0, 0, 0.18);
+    }
+
+    .hero-image::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.35), transparent 50%);
+    }
+
+    .hero-stat-badge {
+      position: absolute;
+      bottom: 14px;
+      left: 14px;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 16px;
+      padding: 0.6rem 0.9rem;
+      font-size: 0.8rem;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+      z-index: 1;
+    }
+
+    .hero-stat-badge strong {
+      color: var(--color-main-dark);
+    }
+
+    .btn-cta-main {
+      background: linear-gradient(180deg, #ffca28, #ffa000);
+      color: #1b1f1a;
+      font-weight: 800;
+      border-radius: 40px;
+      padding: 0.8rem 1.7rem;
+      font-size: 0.95rem;
+      box-shadow: 0 6px 0 #c68400;
+      border: 1px solid #f9a825;
+    }
+
+    .btn-cta-main:active {
+      transform: translateY(3px);
+      box-shadow: 0 2px 0 #c68400;
+    }
+
+    .btn-cta-sub {
+      border-radius: 40px;
+      border: 1px dashed var(--color-border);
+      padding: 0.7rem 1.4rem;
+      font-size: 0.9rem;
+      background-color: #ffffff;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        grid-template-columns: 1fr;
+        padding-top: 1.5rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-title {
+        font-size: 1.9rem;
+      }
+      .hero-subtitle {
+        font-size: 0.9rem;
+      }
+    }
+
+    /* ABOUT */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      gap: 2rem;
+    }
+
+    .badge-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 0.8rem;
+      margin-top: 1.2rem;
+    }
+
+    .badge-card {
+      padding: 0.8rem 0.9rem;
+      border-radius: 16px;
+      border: 1px solid var(--color-border);
+      background-color: #ffffff;
+      font-size: 0.85rem;
+    }
+
+    .badge-card-title {
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+      color: var(--color-main-dark);
+    }
+
+    @media (max-width: 768px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* SERVICES */
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.2rem;
+    }
+
+    .service-card {
+      border-radius: 18px;
+      border: 1px solid var(--color-border);
+      background-color: #ffffff;
+      padding: 1.2rem 1rem 1.3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-size: 0.9rem;
+    }
+
+    .service-title {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+    }
+
+    .service-body {
+      font-size: 0.88rem;
+      color: #555555;
+      margin-bottom: 0.8rem;
+    }
+
+    .service-meta {
+      font-size: 0.8rem;
+      color: #777777;
+      margin-bottom: 0.6rem;
+    }
+
+    .service-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+    }
+
+    .service-tag {
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      background-color: rgba(255, 179, 0, 0.11);
+      color: #9c6a00;
+      font-weight: 500;
+    }
+
+    @media (max-width: 900px) {
+      .service-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 640px) {
+      .service-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* PORTFOLIO / GALLERY */
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+
+    .portfolio-card {
+      background-color: #ffffff;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid var(--color-border);
+      font-size: 0.85rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .portfolio-thumb {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+    }
+
+    .portfolio-body {
+      padding: 0.7rem 0.9rem 0.9rem;
+    }
+
+    .portfolio-title {
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+    }
+
+    .portfolio-meta {
+      color: #777777;
+      font-size: 0.8rem;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 16px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+    }
+
+    /* CONTACT */
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .contact-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .contact-tabs {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 1.2rem;
+      flex-wrap: wrap;
+    }
+
+    .contact-tab-btn {
+      flex: 1 1 160px;
+      padding: 0.5rem 0.8rem;
+      border-radius: 999px;
+      border: 1px solid var(--color-border);
+      background-color: #ffffff;
+      font-size: 0.85rem;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .contact-tab-btn.active {
+      background-color: rgba(76, 175, 80, 0.1);
+      border-color: var(--color-main);
+      color: var(--color-main-dark);
+      font-weight: 600;
+    }
+
+    .contact-form {
+      background-color: #ffffff;
+      border-radius: 18px;
+      padding: 1.4rem 1.3rem;
+      border: 1px solid var(--color-border);
+      font-size: 0.9rem;
+    }
+
+    .contact-form.hidden {
+      display: none;
+    }
+
+    .contact-form-group {
+      margin-bottom: 0.9rem;
+    }
+
+    label {
+      display: block;
+      font-size: 0.8rem;
+      margin-bottom: 0.25rem;
+      color: #555555;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid var(--color-border);
+      padding: 0.5rem 0.65rem;
+      font-size: 0.9rem;
+      font-family: inherit;
+      outline: none;
+      transition: border-color 0.15s ease-out, box-shadow 0.15s ease-out;
+      background-color: #fcfcf9;
+      box-sizing: border-box;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: var(--color-main);
+      box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.16);
+      background-color: #ffffff;
+    }
+
+    textarea {
+      min-height: 110px;
+      resize: vertical;
+    }
+
+    .option-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      font-size: 0.84rem;
+    }
+
+    .option-row label {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      border: 1px solid var(--color-border);
+      background-color: #fafafa;
+      flex: 0 0 auto;
+      white-space: nowrap;
+    }
+
+    .option-row input[type="radio"] {
+      margin: 0;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      accent-color: var(--color-main);
+    }
+
+    .contact-buttons {
+      margin-top: 1.2rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .contact-buttons-row {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn-full-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(180deg, #ffca28, #ffa000);
+      color: #1b1f1a;
+      font-weight: 800;
+      border-radius: 999px;
+      box-shadow: 0 6px 0 #c68400;
+      border: 1px solid #f9a825;
+      padding: 0.7rem 1.6rem;
+      font-size: 0.95rem;
+    }
+
+    .btn-full-primary:active {
+      transform: translateY(3px);
+      box-shadow: 0 2px 0 #c68400;
+    }
+
+    .btn-contact-sub {
+      border-radius: 999px;
+      border: 1px dashed var(--color-border);
+      padding: 0.5rem 1rem;
+      font-size: 0.85rem;
+      background-color: #ffffff;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .contact-info-card {
+      background-color: #ffffff;
+      border-radius: 18px;
+      padding: 1.3rem 1.2rem;
+      border: 1px solid var(--color-border);
+      font-size: 0.88rem;
+    }
+
+    .contact-info-item {
+      margin-bottom: 0.6rem;
+    }
+
+    .contact-highlight {
+      margin-top: 1rem;
+      padding: 0.7rem 0.8rem;
+      border-radius: 12px;
+      background-color: rgba(46, 125, 50, 0.06);
+      font-size: 0.82rem;
+    }
+
+    .quick-menu {
+      position: fixed;
+      top: 90px;
+      right: 12px;
+      z-index: 120;
+      font-size: 0.85rem;
+    }
+
+    .quick-toggle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: none;
+      background: #ffffff;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.18);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-main-dark);
+      font-size: 1.2rem;
+    }
+
+    .quick-panel {
+      position: absolute;
+      top: 48px;
+      right: 0;
+      background-color: #ffffff;
+      border-radius: 14px;
+      box-shadow: 0 12px 26px rgba(0,0,0,0.18);
+      padding: 0.7rem 0.9rem;
+      min-width: 170px;
+      display: none;
+    }
+
+    .quick-panel.open {
+      display: block;
+    }
+
+    .quick-panel h4 {
+      font-size: 0.8rem;
+      margin-bottom: 0.4rem;
+      color: var(--color-main-dark);
+    }
+
+    .quick-panel a {
+      display: block;
+      padding: 0.2rem 0;
+      font-size: 0.8rem;
+    }
+
+    .quick-panel hr {
+      border: none;
+      border-top: 1px solid var(--color-border);
+      margin: 0.4rem 0;
+    }
+
+    @media (max-width: 600px) {
+      .quick-menu {
+        top: auto;
+        bottom: 18px;
+      }
+    }
+
+    footer {
+      border-top: 1px solid var(--color-border);
+      padding: 1.2rem 1.25rem 2rem;
+      font-size: 0.78rem;
+      color: #777777;
+      background-color: #fbfbf7;
+    }
+
+    .footer-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .footer-company {
+      font-weight: 600;
+      color: var(--color-main-dark);
+    }
+
+    .footer-bottom {
+      font-size: 0.75rem;
+      color: #999999;
+    }
+
+    @media (max-width: 480px) {
+      section {
+        padding: 2.6rem 0;
+      }
+    }
+
+.form-submit-wrapper {
+  margin-top: 1.2rem;
+  text-align: center;
+}
+
+.form-submit-btn {
+  background: linear-gradient(180deg, #ffca28, #ffa000);
+  color: #1b1f1a;
+  font-weight: 800;
+  border-radius: 40px;
+  padding: 0.8rem 1.7rem;
+  font-size: 0.95rem;
+  box-shadow: 0 6px 0 #c68400;
+  border: 1px solid #f9a825;
+  cursor: pointer;
+}
+
+.form-submit-btn:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px 0 #c68400;
+}
+
+.form-submit-wrapper {
+  margin-top: 1.4rem;
+  text-align: center;
+}
+
+.form-submit-hint {
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.form-submit-btn {
+  background: linear-gradient(180deg, #ffca28, #ffa000);
+  color: #1b1f1a;
+  font-weight: 800;
+  border-radius: 999px;
+  padding: 0.75rem 1.9rem;
+  font-size: 0.95rem;
+  box-shadow: 0 6px 0 #c68400;
+  border: 1px solid #f9a825;
+  cursor: pointer;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, opacity 0.2s ease;
+}
+
+.form-submit-btn:hover {
+  box-shadow: 0 8px 0 #c68400;
+  transform: translateY(-1px);
+}
+
+.form-submit-btn:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px 0 #c68400;
+}
+
+/* 전송 중 / 완료 상태 */
+.form-submit-btn.is-sending {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+.form-submit-btn.is-success {
+  background: #2e7d32;
+  box-shadow: 0 6px 0 #1b5e20;
+  border-color: #2e7d32;
+  color: #fff;
+}
+
+
+  
+    /* Blog section */
+    .alt-section {
+      background: rgba(245, 246, 240, 0.6);
+      border-radius: 18px;
+      padding: clamp(24px, 4vw, 44px);
+    }
+    .section-lead {
+      margin-top: 8px;
+      color: rgba(50, 42, 32, 0.85);
+      line-height: 1.7;
+      max-width: 70ch;
+    }
+    .blog-grid {
+      display: grid;
+      gap: 18px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      margin-top: 22px;
+    }
+    .blog-card {
+      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid rgba(79, 68, 50, 0.12);
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 10px 24px rgba(31, 26, 18, 0.06);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .blog-card h3 { margin: 0; font-size: 1.08rem; }
+    .blog-card p { margin: 0; color: rgba(55, 47, 36, 0.82); line-height: 1.55; }
+    .note-box {
+      margin-top: 18px;
+      padding: 14px 16px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px dashed rgba(79, 68, 50, 0.22);
+      display: flex;
+      gap: 10px;
+      align-items: baseline;
+      color: rgba(55, 47, 36, 0.88);
+    }
+
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FoodEstablishment",
+  "name": "웰빙푸드",
+  "alternateName": "WELLBEING FOOD",
+  "url": "https://집밥.kr/",
+  "image": [
+    "https://집밥.kr/hero-1.jpg",
+    "https://집밥.kr/hero-2.jpg",
+    "https://집밥.kr/hero-3.jpg",
+    "https://집밥.kr/hero-4.jpg"
+  ],
+  "telephone": "+82-10-6364-1170",
+  "servesCuisine": [
+    "Korean",
+    "Buffet"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "KR",
+    "addressRegion": "경기도",
+    "addressLocality": "부천시"
+  },
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "부천시"
+    },
+    {
+      "@type": "City",
+      "name": "인천"
+    },
+    {
+      "@type": "City",
+      "name": "서울"
+    }
+  ],
+  "sameAs": [
+    "https://open.kakao.com/o/pPvpjF2h",
+    "https://blog.naver.com/jibbab_kr"
+  ],
+  "makesOffer": [
+    {
+      "@type": "Offer",
+      "name": "기업·공장 상시 단체급식"
+    },
+    {
+      "@type": "Offer",
+      "name": "학교·학원·기관 도시락"
+    },
+    {
+      "@type": "Offer",
+      "name": "행사·세미나 출장뷔페"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<div class="hero-visual">
+</div>
+
+  <!-- INTRO SPLASH -->
+  <div id="intro">
+    <div class="intro-orbit">
+      <div class="intro-droplet">
+        <div class="intro-droplet-glow"></div>
+        <div class="intro-inner">
+          <div class="intro-kor">웰빙푸드</div>
+          <div class="intro-en">WELLBEING FOOD</div>
+          <div class="intro-tagline">단체급식</div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <button class="intro-skip" type="button">
+      skip!
+    </button>
+  </div>
+
+  <!-- HEADER / NAV -->
+  <header>
+    <div class="nav-container">
+      <a href="#hero" class="logo">
+        WELLBEING FOOD
+        <span class="en">웰빙푸드</span>
+      </a>
+
+      <button class="nav-menu-toggle" aria-label="메뉴 열기">
+        ☰
+      </button>
+
+      <div class="nav-links">
+        <nav>
+          <ul id="navMenu">
+            <li><a href="#about">회사소개</a></li>
+            <li><a href="#services">서비스</a></li>
+            <li><a href="#portfolio">포트폴리오</a></li>
+            <li><a href="#blog">블로그</a></li>
+            <li><a href="#gallery">메뉴 갤러리</a></li>
+            <li><a href="#contact">문의하기</a></li>
+          </ul>
+        </nav>
+        <div class="nav-actions">
+          <a href="tel:01063641170" class="btn btn-outline">전화 상담</a>
+          <a href="#contact" class="btn btn-primary">식단 · 견적 문의</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- QUICK POPUP MENU (오른쪽 상단) -->
+  <div class="quick-menu">
+    <button class="quick-toggle" type="button">☰</button>
+    <div class="quick-panel" id="quickPanel">
+      <h4>바로가기</h4>
+      <a href="#hero">· 맨 위로</a>
+      <a href="#services">· 서비스</a>
+      <a href="#portfolio">· 포트폴리오</a>
+      <a href="#gallery">· 메뉴 갤러리</a>
+      <a href="#contact">· 문의하기</a>
+      <hr />
+      <h4>연락하기</h4>
+      <a href="tel:01063641170">📞 전화 010-6364-1170</a>
+      <a href="sms:01063641170">💬 문자 보내기</a>
+      <a href="https://open.kakao.com/o/pPvpjF2h" target="_blank">🟡 카카오채널 웰빙푸드</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="hero-copy">
+        <div class="hero-tag">
+          집밥 스타일 한식 단체급식 · 도시락 · 출장뷔페
+        </div>
+        <h1 class="hero-title">
+          집밥 한식 뷔페, <span class="highlight">웰빙푸드</span>
+        </h1>
+        <p class="hero-subtitle">
+          비교 불가한 맛과 정성의 차이로<br />
+          기업·학교·공장 단체급식을 책임지는 집밥 한식 뷔페 전문 업체입니다.
+        </p>
+        <div class="hero-buttons">
+          <a href="tel:01063641170" class="btn btn-cta-main">📞 전화 상담 010-6364-1170</a>
+          <a href="sms:01063641170" class="btn btn-cta-sub">💬 문자 문의</a>
+          <a href="https://open.kakao.com/o/pPvpjF2h" class="btn btn-cta-sub" target="_blank">🟡 카카오채널 웰빙푸드</a>
+        </div>
+        <p class="hero-meta">
+          <strong>주요 고객</strong> &nbsp;기업 · 공장 · 관공서 · 학교 · 학원 등
+        </p>
+      </div>
+      <div class="hero-image">
+        <picture>
+          <source srcset="/hero-1.webp" type="image/webp">
+          <img src="https://집밥.kr/hero-1.jpg" alt="웰빙푸드 집밥 한식 뷔페 대표 이미지" loading="eager">
+        </picture>
+        <div class="hero-stat-badge">
+          오늘도 준비 중인<br>
+          <strong>따뜻한 집밥 한 상</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2 class="section-heading">웰빙푸드는 이런 곳입니다.</h2>
+      <p class="section-subheading">
+        부천 인천 서울서부 지역에 있는 기업, 공장, 관공서, 학교 등 다양한 사업장에
+        집밥 스타일 한식 단체급식과 도시락, 출장뷔페 서비스를 제공합니다.
+      </p>
+
+      <div class="about-grid">
+        <div>
+          <p style="margin-bottom: 0.9rem; font-size: 0.95rem;">
+            매일 먹어도 질리지 않는 집밥 같은 한 끼를 위해,
+            신선한 재료와 체계적인 위생관리, 고객사 특성에 맞춘 맞춤 식단을
+            기본 원칙으로 하고 있습니다.
+          </p>
+          <p style="font-size: 0.9rem;">
+            근로자와 학생, 공무원 등 다양한 연령과 직군이 함께 드시는 식사인
+            만큼, 영양 균형과 맛, 안전을 모두 고려한 식단을 제안드립니다.
+          </p>
+        </div>
+        <div>
+          <div class="badge-grid">
+            <div class="badge-card">
+              <div class="badge-card-title">상호</div>
+              <div>웰빙푸드 (WELLBEING FOOD)</div>
+            </div>
+            <div class="badge-card">
+              <div class="badge-card-title">업종</div>
+              <div>음식점업 · 한식 · 단체급식/도시락</div>
+            </div>
+            <div class="badge-card">
+              <div class="badge-card-title">영업지역</div>
+              <div>부천 · 서울 서부 · 인천 인근 산업단지</div>
+            </div>
+            <div class="badge-card">
+              <div class="badge-card-title">개업일</div>
+              <div>2024년 12월 30일 (사업자등록 기준)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <h2 class="section-heading">서비스 안내</h2>
+      <p class="section-subheading">
+        사업장의 규모와 업종, 예산에 맞춰 단체급식, 도시락, 출장뷔페를 맞춤 설계해 드립니다.
+      </p>
+
+      <div class="service-grid">
+        <div class="service-card">
+          <div>
+            <h3 class="service-title">기업 · 공장 상시 단체급식</h3>
+            <p class="service-body">
+              상시 근무 인원을 위한 정기 단체급식 서비스입니다.
+              근로 강도와 근무 시간대에 맞춰 아침, 점심, 저녁 식단을 설계합니다.
+            </p>
+            <p class="service-meta">
+              · 권장 인원: 약 50인 이상<br />
+              · 제공 방식: 배식형 / 식판형 / 도시락형 협의
+            </p>
+          </div>
+          <div class="service-footer">
+            <span class="service-tag">정기 계약</span>
+            <a href="#contact" class="btn btn-outline"
+               style="padding:0.35rem 0.7rem;font-size:0.8rem;"
+               data-intent="regular-service">
+              상시 급식 상담
+            </a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div>
+            <h3 class="service-title">학교 · 학원 · 기관 도시락</h3>
+            <p class="service-body">
+              학생, 수강생, 교육 참여자를 위한 도시락 형태의 급식 서비스입니다.
+              연령과 알레르기 정보를 고려해 메뉴를 조정합니다.
+            </p>
+            <p class="service-meta">
+              · 권장 인원: 30인 이상<br />
+              · 제공 방식: 개별 도시락 / 간편 런치박스
+            </p>
+          </div>
+          <div class="service-footer">
+            <span class="service-tag">도시락 전문</span>
+            <a href="#contact" class="btn btn-outline"
+               style="padding:0.35rem 0.7rem;font-size:0.8rem;"
+               data-intent="regular-lunchbox">
+              도시락 견적 문의
+            </a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div>
+            <h3 class="service-title">행사 · 세미나 출장뷔페</h3>
+            <p class="service-body">
+              기업 행사, 세미나, 워크숍, 오픈식 등을 위한 출장뷔페 서비스입니다.
+              행사 성격과 예산에 맞춘 코스를 제안해 드립니다.
+            </p>
+            <p class="service-meta">
+              · 권장 인원: 40인 이상<br />
+              · 제공 방식: 뷔페 테이블 세팅 · 현장 서비스
+            </p>
+          </div>
+          <div class="service-footer">
+            <span class="service-tag">원데이 행사</span>
+            <a href="#contact" class="btn btn-outline"
+               style="padding:0.35rem 0.7rem;font-size:0.8rem;"
+               data-intent="event-buffet">
+              스케줄 확인
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio">
+      <h2 class="section-heading">
+        집밥 한식 뷔페<br />포트폴리오
+      </h2>
+      <p class="section-subheading">
+        실제 계약 이후, 고객사명과 현장 사진을 순차적으로 업데이트 합니다.
+      </p>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-card">
+          <img src="https://집밥.kr/buffet-line-1.jpg" alt="한식 뷔페 라인" class="portfolio-thumb" loading="lazy" />
+          <div class="portfolio-body">
+            <div class="portfolio-title">세무서 상시 단체급식</div>
+            <div class="portfolio-meta">
+              주 5일 · 1일 2식(중/석식) · 80인 규모
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <img src="https://집밥.kr/buffet-hall-1.jpg" alt="단체급식 식당 전경" class="portfolio-thumb" loading="lazy" />
+          <div class="portfolio-body">
+            <div class="portfolio-title">공공기관 구내식당 운영</div>
+            <div class="portfolio-meta">
+              상시 운영 · 점심 한 끼 · 100인 이상 규모
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <img src="https://집밥.kr/buffet-hall-2.jpg" alt="다른 현장 전경" class="portfolio-thumb" loading="lazy" />
+          <div class="portfolio-body">
+            <div class="portfolio-title">관공서 내 한식 뷔페</div>
+            <div class="portfolio-meta">
+              교육 일정 맞춤 단체급식 · 행사 뷔페 겸용
+            </div>
+          </div>
+        </div>
+      
+        <article class="portfolio-item">
+          <img src="https://집밥.kr/images/dongwon-1.jpg" alt="인천항 물류단지 구내식당 현장" loading="lazy" />
+          <div class="portfolio-text">
+            <h3>인천항 물류단지 구내식당 (현장 급식)</h3>
+            <p class="meta">상시 급식 · 이동급식 세팅 · 다인원 운영</p>
+            <ul>
+              <li>배식 동선과 온도 유지 중심으로 세팅</li>
+              <li>국/밥/메인/반찬 구성, 행사 시 추가 메뉴 확장</li>
+              <li>현장 여건(공간/시간/인원)에 맞춰 유연하게 운영</li>
+            </ul>
+          </div>
+        </article>
+</div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery">
+      <h2 class="section-heading">대표 메뉴 갤러리</h2>
+      <p class="section-subheading">
+        행사 성격과 인원에 맞춰 구성 가능한 대표 메뉴입니다.
+      </p>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="https://집밥.kr/buffet-1.jpg" alt="뷔페 라인 2" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="https://집밥.kr/buffet-2.jpg" alt="메뉴 구성 1" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="https://집밥.kr/buffet-3.jpg" alt="메뉴 구성 2" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="https://집밥.kr/buffet-4.jpg" alt="메뉴 구성 3" />
+        </div>
+        <div class="gallery-item">
+          <img src="https://집밥.kr/buffet-5.jpg" alt="메뉴 구성 4" />
+        </div>
+      
+        <figure class="gallery-item">
+          <img src="https://집밥.kr/images/dongwon-2.jpg" alt="현장 배식 라인" loading="lazy" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="https://집밥.kr/images/dongwon-4.jpg" alt="식당 내부 전경" loading="lazy" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="https://집밥.kr/images/dongwon-7.jpg" alt="조리/준비 공간" loading="lazy" />
+        </figure>
+</div>
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="blog" class="alt-section">
+      <h2>블로그 · 소식</h2>
+      <p class="section-lead">
+        현장 이야기, 주간 식단 구성, 행사 후기 등은 블로그에서 계속 업데이트합니다.
+      </p>
+
+      <div class="blog-grid">
+        <article class="blog-card">
+          <h3>집밥.kr 공식 블로그</h3>
+          <p>최신 소식과 포트폴리오를 한눈에 볼 수 있어요.</p>
+          <a class="btn btn-outline" href="https://blog.naver.com/jibbab_kr" target="_blank" rel="noopener">블로그 바로가기</a>
+        </article>
+
+        <article class="blog-card">
+          <h3>대표 글</h3>
+          <p>처음 방문하시는 분이 가장 빠르게 이해할 수 있는 안내 글입니다.</p>
+          <a class="btn btn-primary" href="https://blog.naver.com/jibbab_kr/224109353925" target="_blank" rel="noopener">대표 글 열기</a>
+        </article>
+      </div>
+
+      <div class="note-box">
+        <strong>TIP</strong>
+        <span>홈페이지는 “한 페이지 소개서”, 블로그는 “계속 쌓이는 실적/콘텐츠”로 분리하면 네이버 노출에 유리합니다.</span>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-heading">단체급식 · 도시락 · 출장뷔페 문의</h2>
+      <p class="section-subheading">
+        상시 단체급식과 행사·출장뷔페는 필요한 정보가 다릅니다.<br />
+        아래에서 문의 유형을 먼저 선택하신 후, 해당 항목만 간단히 입력해 주세요.
+      </p>
+
+      <div class="contact-layout">
+        <div>
+          <div class="contact-tabs">
+            <button class="contact-tab-btn active" data-target="regular">상시 단체급식 문의</button>
+            <button class="contact-tab-btn" data-target="event">행사 · 출장뷔페 문의</button>
+          </div>
+
+          <form class="contact-form" id="contact-regular">
+            <div class="contact-form-group">
+              <label for="reg-company">업체명 / 기관명</label>
+              <input id="reg-company" type="text" placeholder="예) ○○산업 부천공장" />
+            </div>
+            <div class="contact-form-group">
+              <label for="reg-name">담당자 성함</label>
+              <input id="reg-name" type="text" placeholder="성함을 입력해주세요." />
+            </div>
+            <div class="contact-form-group">
+              <label for="reg-phone">연락처</label>
+              <input id="reg-phone" type="tel" placeholder="예) 010-6364-1170" />
+            </div>
+            <div class="contact-form-group">
+              <label>희망 서비스 형태</label>
+              <div class="option-row">
+                <label>
+                  <input type="radio" name="reg-service" value="상시 단체급식" checked />
+                  상시 단체급식
+                </label>
+                <label>
+                  <input type="radio" name="reg-service" value="도시락" />
+                  도시락
+                </label>
+                <label>
+                  <input type="radio" name="reg-service" value="출장뷔페(행사)" />
+                  출장뷔페(행사)
+                </label>
+                <label>
+                  <input type="radio" name="reg-service" value="기타" />
+                  기타
+                </label>
+              </div>
+            </div>
+            <div class="contact-form-group">
+              <label for="reg-headcount">상시 근무 인원수</label>
+              <input id="reg-headcount" type="text" placeholder="예) 약 70명" />
+            </div>
+            <div class="contact-form-group">
+              <label>필요 식사 (중복 선택 가능)</label>
+              <div class="option-row">
+                <label>
+                  <input type="checkbox" name="reg-meals" value="조식" />
+                  조식
+                </label>
+                <label>
+                  <input type="checkbox" name="reg-meals" value="중식" />
+                  중식
+                </label>
+                <label>
+                  <input type="checkbox" name="reg-meals" value="석식" />
+                  석식
+                </label>
+                <label>
+                  <input type="checkbox" name="reg-meals" value="야식" />
+                  야식
+                </label>
+                <label>
+                  <input type="checkbox" name="reg-meals" value="기타/협의" />
+                  기타 / 협의
+                </label>
+              </div>
+            </div>
+
+            <div class="contact-form-group">
+              <label for="reg-date">희망 시작일</label>
+              <input id="reg-date" type="date" />
+            </div>
+            <div class="contact-form-group">
+              <label for="reg-place">사업장 주소</label>
+              <input id="reg-place" type="text" placeholder="예) 부천시 ○○로 00, ○○빌딩 1층 구내식당" />
+            </div>
+            <div class="contact-form-group">
+              <label for="reg-message">요청사항</label>
+              <textarea id="reg-message" placeholder="예) 1일 2식, 예산 범위, 알레르기/종교식, 특이사항 등"></textarea>
+            </div>
+
+                        <div class="contact-buttons">
+              <a href="tel:01063641170" class="btn-full-primary">
+                📞 전화로 상담하기<br> (010-6364-1170)
+              </a>
+
+              <div class="contact-buttons-row">
+                <a href="sms:01063641170" class="btn-contact-sub">💬 문자 문의</a>
+                <a href="https://open.kakao.com/o/pPvpjF2h" class="btn-contact-sub" target="_blank">🟡 카카오채널 웰빙푸드</a>
+              </div>
+            </div>
+
+            <!-- ✅ 상시 단체급식 폼 전송 버튼 -->
+            <div class="form-submit-wrapper">
+              <button type="submit" class="form-submit-btn">
+                폼으로 단체급식 문의 전송하기
+              </button>
+              <p class="form-submit-hint">
+                * 전송 후 담당자가 내용을 확인하고 연락드립니다.
+              </p>
+            </div>
+          </form>
+
+
+          <form class="contact-form hidden" id="contact-event">
+            <div class="contact-form-group">
+              <label for="evt-title">행사명 / 행사 성격</label>
+              <input id="evt-title" type="text" placeholder="예) 창립기념식 뷔페, 세미나 다과 등" />
+            </div>
+            <div class="contact-form-group">
+              <label for="evt-name">담당자 성함</label>
+              <input id="evt-name" type="text" placeholder="성함을 입력해주세요." />
+            </div>
+            <div class="contact-form-group">
+              <label for="evt-phone">연락처</label>
+              <input id="evt-phone" type="tel" placeholder="예) 010-6364-1170" />
+            </div>
+            <div class="contact-form-group">
+              <label>희망 서비스 형태</label>
+              <div class="option-row">
+                <label>
+                  <input type="radio" name="evt-service" value="출장뷔페(행사)" checked />
+                  출장뷔페(행사)
+                </label>
+                <label>
+                  <input type="radio" name="evt-service" value="도시락" />
+                  행사용 도시락
+                </label>
+                <label>
+                  <input type="radio" name="evt-service" value="기타" />
+                  기타
+                </label>
+              </div>
+            </div>
+            <div class="contact-form-group">
+              <label for="evt-date">행사 날짜</label>
+              <input id="evt-date" type="date" />
+            </div>
+            <div class="contact-form-group">
+              <label for="evt-time">행사 시간대</label>
+              <input id="evt-time" type="text" placeholder="예) 11:00~14:00, 18:00~20:00 등" />
+            </div>
+            <div class="contact-form-group">
+              <label for="evt-place">행사 장소</label>
+              <input id="evt-place" type="text" placeholder="예) ○○센터 2층 대강당, 야외 행사장 등" />
+            </div>
+            <div class="contact-form-group">
+              <label for="evt-headcount">예상 참석 인원</label>
+              <input id="evt-headcount" type="text" placeholder="예) 약 80명" />
+            </div>
+            <div class="contact-form-group">
+              <label for="evt-menu">희망 메뉴 / 구성</label>
+              <textarea id="evt-menu" placeholder="예) 한식 위주, 간단 다과 + 식사, 고급 뷔페 등"></textarea>
+            </div>
+            <div class="contact-form-group">
+              <label for="evt-message">추가 요청사항</label>
+              <textarea id="evt-message" placeholder="예) 예산 범위, VIP 좌석, 알레르기/종교식, 테이블 세팅 등"></textarea>
+            </div>
+
+              <div class="contact-buttons">
+              <a href="tel:01063641170" class="btn-full-primary">
+                📞 전화로 행사 상담하기<br> (010-6364-1170)
+              </a>
+              <div class="contact-buttons-row">
+                <a href="sms:01063641170" class="btn-contact-sub">💬 행사 관련 문자 문의</a>
+                <a href="https://open.kakao.com/o/pPvpjF2h" class="btn-contact-sub" target="_blank">🟡 카카오채널 웰빙푸드</a>
+              </div>
+            </div>
+
+            <!-- ✅ 행사 · 출장뷔페 폼 전송 버튼 -->
+            <div class="form-submit-wrapper">
+              <button type="submit" class="form-submit-btn">
+                폼으로 행사/뷔페 문의 전송하기
+              </button>
+              <p class="form-submit-hint">
+                * 전송 후 담당자가 행사 내용을 확인하고 연락드립니다.
+              </p>
+            </div>
+          </form>
+
+        </div>
+
+        <div class="contact-info-card">
+          <div class="contact-info-item">
+            <strong>전화 상담</strong><br />
+            <a href="tel:01063641170">010-6364-1170</a>
+          </div>
+          <div class="contact-info-item">
+            <strong>카카오채널</strong><br />
+            <a href="https://open.kakao.com/o/pPvpjF2h" target="_blank">웰빙푸드 (open.kakao.com/o/pPvpjF2h)</a>
+          </div>
+          <div class="contact-info-item">
+            <strong>이메일</strong><br />
+            <a href="mailto:info@wellbeingfood.co.kr">info@wellbeingfood.co.kr</a>
+          </div>
+          <div class="contact-info-item">
+            <strong>주소</strong><br />
+            경기도 부천시 (사업자등록증 기재 주소)
+          </div>
+
+          <div class="contact-highlight">
+            전화, 문자, 카카오채널 중 편하신 방법으로 연락 주시면,<br />
+            웰빙푸드가 식단 구성과 견적을 빠르게 안내해 드립니다.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <span class="footer-company">웰빙푸드</span>
+          &nbsp;|&nbsp; 대표 : 전금숙
+        </div>
+        <div>
+          사업자등록번호 : 896-23-01923
+        </div>
+      </div>
+      <div>
+        주소 : 경기도 부천시 (사업자등록증 기재 주소) · 전화 : 010-6364-1170 · 이메일 : info@wellbeingfood.co.kr
+      </div>
+      <div class="footer-bottom">
+        © 웰빙푸드. All rights reserved.
+      </div>
+    </div>
+    <div class="footer-blog">
+    <a href="https://blog.naver.com/jibbab_kr" target="_blank" rel="noopener">네이버 블로그: jibbab_kr</a>
+  </div>
+</footer>
+
+  <script>
+    // Intro splash
+    const intro = document.getElementById("intro");
+    const introSkip = document.querySelector(".intro-skip");
+    function hideIntro() {
+      if (!intro) return;
+      intro.classList.add("hide");
+      setTimeout(() => {
+        intro.style.display = "none";
+      }, 700);
+    }
+    window.addEventListener("load", () => {
+      setTimeout(hideIntro, 500);
+    });
+    if (introSkip) {
+      introSkip.addEventListener("click", hideIntro);
+    }
+
+    // Mobile nav
+    const navToggle = document.querySelector(".nav-menu-toggle");
+    const navMenu = document.getElementById("navMenu");
+    if (navToggle && navMenu) {
+      navToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("open");
+      });
+    }
+
+    // Quick menu
+    const quickToggle = document.querySelector(".quick-toggle");
+    const quickPanel = document.getElementById("quickPanel");
+    if (quickToggle && quickPanel) {
+      quickToggle.addEventListener("click", () => {
+        quickPanel.classList.toggle("open");
+      });
+    }
+
+    // 문의 탭 전환 함수
+    const tabButtons = document.querySelectorAll(".contact-tab-btn");
+    const regularForm = document.getElementById("contact-regular");
+    const eventForm = document.getElementById("contact-event");
+
+    function activateTab(target) {
+      tabButtons.forEach((b) => b.classList.remove("active"));
+      if (target === "regular") {
+        tabButtons.forEach((b) => {
+          if (b.dataset.target === "regular") b.classList.add("active");
+        });
+        regularForm.classList.remove("hidden");
+        eventForm.classList.add("hidden");
+      } else {
+        tabButtons.forEach((b) => {
+          if (b.dataset.target === "event") b.classList.add("active");
+        });
+        eventForm.classList.remove("hidden");
+        regularForm.classList.add("hidden");
+      }
+    }
+
+    tabButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const target = btn.getAttribute("data-target");
+        activateTab(target);
+      });
+    });
+
+    // 서비스 카드 버튼 -> 폼 자동 세팅
+    const serviceButtons = document.querySelectorAll("[data-intent]");
+
+    function handleServiceIntent(intent) {
+      if (intent === "regular-service") {
+        activateTab("regular");
+        const r = document.querySelector('input[name="reg-service"][value="상시 단체급식"]');
+        if (r) r.checked = true;
+      } else if (intent === "regular-lunchbox") {
+        activateTab("regular");
+        const r = document.querySelector('input[name="reg-service"][value="도시락"]');
+        if (r) r.checked = true;
+      } else if (intent === "event-buffet") {
+        activateTab("event");
+        const r = document.querySelector('input[name="evt-service"][value="출장뷔페(행사)"]');
+        if (r) r.checked = true;
+      }
+    }
+
+    serviceButtons.forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        const intent = btn.getAttribute("data-intent");
+
+        const contactSection = document.getElementById("contact");
+        if (contactSection) {
+          contactSection.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+          handleServiceIntent(intent);
+        });
+      });
+
+       // -------------------------------
+    // 상시 단체급식 폼 submit 이벤트
+    // -------------------------------
+    const regularFormEl = document.getElementById("contact-regular");
+    if (regularFormEl) {
+      regularFormEl.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const data = {
+          type: "regular",
+          company: document.getElementById("reg-company").value || "",
+          name: document.getElementById("reg-name").value || "",
+          phone: document.getElementById("reg-phone").value || "",
+          service: (document.querySelector("input[name='reg-service']:checked") || {}).value || "",
+          headcount: document.getElementById("reg-headcount").value || "",
+          meals: Array.from(document.querySelectorAll("input[name='reg-meals']:checked"))
+            .map(x => x.value)
+            .join(", "),
+          date: document.getElementById("reg-date").value || "",
+          place: document.getElementById("reg-place").value || "",
+          message: document.getElementById("reg-message").value || "",
+          menu: "" // 상시 폼에는 별도 메뉴 필드 없음
+        };
+
+    // 행사 · 출장뷔페 폼 submit 이벤트
+    // -------------------------------
+    const eventFormEl = document.getElementById("contact-event");
+    if (eventFormEl) {
+      eventFormEl.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const data = {
+          type: "event",
+          company: "", // 행사 폼은 업체명 대신 title 사용
+          title: document.getElementById("evt-title").value || "",
+          name: document.getElementById("evt-name").value || "",
+          phone: document.getElementById("evt-phone").value || "",
+          service: (document.querySelector("input[name='evt-service']:checked") || {}).value || "",
+          headcount: document.getElementById("evt-headcount").value || "",
+          meals: "", // 필요하면 행사용 식사 옵션 필드를 나중에 추가
+          date: document.getElementById("evt-date").value || "",
+          place: document.getElementById("evt-place").value || "",
+          message: document.getElementById("evt-message").value || "",
+          menu: document.getElementById("evt-menu").value || ""
+        };
+
+  </script>
+
+  <script>
+    (function () {
+      // ✅ 여기에 본인 Apps Script 웹앱 URL ( /exec 로 끝나는 것 )을 넣어주세요.
+      const WEBAPP_URL = "https://script.google.com/macros/s/AKfycbxHO9leErK1nnpGoI9HD2sEceEK4AiD64HhGOQSTI39xeuGqUMaqgs1psUZ08FIKqamGw/exec";
+
+      async function submitToSheet(data, button) {
+        if (!WEBAPP_URL) {
+          console.error("WEBAPP_URL 이 설정되어 있지 않습니다.");
+          alert("전송 설정이 아직 완료되지 않았습니다. 전화/카카오로 문의 부탁드립니다.");
+          return;
+        }
+
+        let originalText = "";
+        if (button) {
+          originalText = button.textContent;
+          button.dataset.originalText = originalText;
+          button.disabled = true;
+          button.classList.add("is-sending");
+          button.textContent = "전송 중...";
+        }
+
+        try {
+          const res = await fetch(WEBAPP_URL, {
+            method: "POST",
+            body: JSON.stringify(data)
+          });
+
+          if (!res.ok) {
+            throw new Error("응답 코드: " + res.status);
+          }
+
+          if (button) {
+            button.classList.remove("is-sending");
+            button.classList.add("is-success");
+            button.textContent = "전송 완료! 확인 후 연락드리겠습니다.";
+          }
+
+          alert("문의가 정상 접수되었습니다. 빠르게 연락드리겠습니다.");
+        } catch (err) {
+          console.error(err);
+          if (button) {
+            button.disabled = false;
+            button.classList.remove("is-sending");
+            button.textContent = button.dataset.originalText || "문의 전송하기";
+          }
+          alert("전송 중 문제가 발생했습니다.\n전화나 카카오채널로도 함께 연락 주시면 더 빠르게 도와드릴 수 있습니다.");
+        }
+      }
+
+      // ✅ 상시 단체급식 폼
+      const regularForm = document.getElementById("contact-regular");
+      if (regularForm) {
+        const regularButton = regularForm.querySelector(".form-submit-btn");
+        regularForm.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const data = {
+            type: "regular",
+            company: document.getElementById("reg-company")?.value || "",
+            name: document.getElementById("reg-name")?.value || "",
+            phone: document.getElementById("reg-phone")?.value || "",
+            service: (document.querySelector("input[name='reg-service']:checked") || {}).value || "",
+            headcount: document.getElementById("reg-headcount")?.value || "",
+            meals: Array.from(document.querySelectorAll("input[name='reg-meals']:checked"))
+              .map(x => x.value)
+              .join(", "),
+            date: document.getElementById("reg-date")?.value || "",
+            place: document.getElementById("reg-place")?.value || "",
+            message: document.getElementById("reg-message")?.value || "",
+            menu: ""
+          };
+
+          submitToSheet(data, regularButton);
+        });
+      }
+
+      // ✅ 행사 · 출장뷔페 폼
+      const eventForm = document.getElementById("contact-event");
+      if (eventForm) {
+        const eventButton = eventForm.querySelector(".form-submit-btn");
+        eventForm.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const data = {
+            type: "event",
+            company: "",
+            title: document.getElementById("evt-title")?.value || "",
+            name: document.getElementById("evt-name")?.value || "",
+            phone: document.getElementById("evt-phone")?.value || "",
+            service: (document.querySelector("input[name='evt-service']:checked") || {}).value || "",
+            headcount: document.getElementById("evt-headcount")?.value || "",
+            meals: "",
+            date: document.getElementById("evt-date")?.value || "",
+            place: document.getElementById("evt-place")?.value || "",
+            message: document.getElementById("evt-message")?.value || "",
+            menu: document.getElementById("evt-menu")?.value || ""
+          };
+
+          submitToSheet(data, eventButton);
+        });
+      }
+    })();
+  </script>
+
+
+</body>
+</html>

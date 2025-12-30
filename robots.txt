@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+User-agent: Yeti
+Allow: /
+Sitemap: https://집밥.kr/sitemap.xml
