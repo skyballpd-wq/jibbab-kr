@@ -4,26 +4,30 @@
   <meta charset="UTF-8" />
   <link rel="canonical" href="https://집밥.kr/" />
   <meta name="naver-site-verification" content="54d73b72f405654221a6c9374ff45ba93d68da28" />
-  <meta name="google-site-verification" content="efccca084bb227ed" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>부천 · 인천 · 서울 단체급식 | 이동급식 집밥 한식 뷔페 · 도시락</title>
+
+  <!-- 기본 메타 -->
   <meta name="description" content="부천·인천·서울 기업·학교·공장 단체급식, 도시락, 출장뷔페 전문 웰빙푸드. 신선한 집밥 스타일 한식으로 상시 급식" />
   <meta name="keywords" content="웰빙푸드, 집밥 한식 뷔페, 단체급식, 부천 단체급식, 도시락, 출장뷔페, 공장 구내식당, 학교 급식, 기업 단체급식" />
   <meta name="author" content="웰빙푸드" />
 
-  <!-- Open Graph -->
+  <!-- Open Graph (카카오톡, 네이버, 페북 공유용) -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="웰빙푸드 | 집밥 한식 뷔페 · 단체급식" />
   <meta property="og:description" content="기업·공장·관공서·학교 단체급식부터 행사·세미나 출장뷔페까지, 집밥 스타일 한식 뷔페 전문 웰빙푸드입니다." />
   <meta property="og:image" content="https://집밥.kr/image/hero-1.jpg?type=w773" />
+  <meta property="og:image" content="https://집밥.kr/image/hero-1.webp?type=w773" />
   <meta property="og:url" content="https://집밥.kr" />
 
-  <!-- Twitter -->
+  <!-- 트위터 카드 -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="웰빙푸드 | 집밥 한식 뷔페 · 단체급식" />
   <meta name="twitter:description" content="부천 인천 서울서부 기반 집밥 한식 단체급식·도시락·출장뷔페 전문 웰빙푸드." />
   <meta name="twitter:image" content="https://집밥.kr/image/hero-1.jpg?type=w773" />
+
+  <!-- Google Search Console -->
+  <meta name="google-site-verification" content="efccca084bb227ed" />
 
   <style>
     :root {
@@ -36,360 +40,1095 @@
       --max-width: 1080px;
     }
 
-    html, body { margin: 0; padding: 0; max-width: 100%; overflow-x: hidden; }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: var(--color-bg); color: var(--color-text); line-height: 1.6; }
-    a { color: inherit; text-decoration: none; }
-    img { max-width: 100%; display: block; }
-    h1, h2, h3, p, button, a { word-break: keep-all; }
-
-    /* ✅ 외부 링크 배지(새로 추가) */
-    .chip-links { display: flex; gap: 0.45rem; flex-wrap: wrap; }
-    .chip {
-      display: inline-flex; align-items: center; gap: 0.35rem;
-      padding: 0.35rem 0.75rem; border-radius: 999px;
-      border: 1px solid var(--color-border);
-      background: rgba(255,255,255,0.92);
-      font-size: 0.85rem;
-      transition: transform 0.12s ease, box-shadow 0.12s ease;
-      white-space: nowrap;
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      max-width: 100%;
+      overflow-x: hidden;
     }
-    .chip:hover { transform: translateY(-1px); box-shadow: 0 6px 14px rgba(0,0,0,0.10); }
-    .chip:active { transform: translateY(1px); box-shadow: none; }
-    .chip-accent { border-color: rgba(255,179,0,0.55); background: rgba(255,179,0,0.10); }
-    .chip-green { border-color: rgba(76,175,80,0.55); background: rgba(76,175,80,0.10); }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    h1, h2, h3, p, button, a {
+      word-break: keep-all;
+    }
 
     /* INTRO SPLASH */
     #intro {
-      position: fixed; inset: 0; z-index: 999;
+      position: fixed;
+      inset: 0;
+      z-index: 999;
       background: radial-gradient(circle at top left, #4caf50 0%, #2e7d32 40%, #1b1f1a 100%);
-      display: flex; flex-direction: column; align-items: center; justify-content: center;
-      color: #ffffff; text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      text-align: center;
       transition: opacity 0.6s ease-out, transform 0.6s ease-out;
       animation: introBgShift 6s ease-in-out infinite alternate;
     }
-    #intro.hide { opacity: 0; transform: scale(1.03); pointer-events: none; }
-    .intro-orbit { width: 280px; height: 280px; display: flex; align-items: center; justify-content: center; animation: introOrbit 7s linear infinite; }
+
+    #intro.hide {
+      opacity: 0;
+      transform: scale(1.03);
+      pointer-events: none;
+    }
+
+    .intro-orbit {
+      width: 280px;
+      height: 280px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: introOrbit 7s linear infinite;
+    }
+
     .intro-droplet {
-      width: 310px; height: 310px;
+      width: 310px;
+      height: 310px;
       border-radius: 55% 60% 70% 45% / 55% 45% 65% 60%;
       background: radial-gradient(circle at 30% 20%, #ffe082 0%, #ffb300 40%, #ffcc80 60%, #ffffff 100%);
       box-shadow: 0 28px 55px rgba(0, 0, 0, 0.38);
-      position: relative; overflow: hidden;
+      position: relative;
+      overflow: hidden;
       animation: introBlob 4.5s ease-in-out infinite alternate;
     }
-    .intro-droplet::before { content: ""; position: absolute; inset: 8%; border-radius: inherit; border: 1px solid rgba(255, 255, 255, 0.6); opacity: 0.8; }
+
+    .intro-droplet::before {
+      content: "";
+      position: absolute;
+      inset: 8%;
+      border-radius: inherit;
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      opacity: 0.8;
+    }
+
     .intro-droplet-glow {
-      position: absolute; inset: -30%;
+      position: absolute;
+      inset: -30%;
       background: radial-gradient(circle at 10% 0%, rgba(255, 255, 255, 0.9), transparent 55%),
                   radial-gradient(circle at 80% 100%, rgba(255, 183, 77, 0.8), transparent 60%);
-      filter: blur(6px); mix-blend-mode: screen; opacity: 0.9;
+      filter: blur(6px);
+      mix-blend-mode: screen;
+      opacity: 0.9;
       animation: introGlow 4s ease-in-out infinite alternate;
     }
-    .intro-inner { position: relative; z-index: 1; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+
+    .intro-inner {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
     .intro-kor {
-      font-weight: 900; font-size: 2.1rem; letter-spacing: 0.16em; text-indent: 0.16em;
-      color: #2e7d32; text-shadow: 0 3px 6px rgba(255, 255, 255, 0.7);
-      opacity: 0; transform: scale(0.6) translateY(16px);
+      font-weight: 900;
+      font-size: 2.1rem;
+      letter-spacing: 0.16em;
+      text-indent: 0.16em;
+      color: #2e7d32;
+      text-shadow: 0 3px 6px rgba(255, 255, 255, 0.7);
+      opacity: 0;
+      transform: scale(0.6) translateY(16px);
       animation: introTextGrow 1.8s cubic-bezier(0.22, 0.73, 0.29, 1.01) 0.2s forwards;
     }
+
     .intro-en {
-      margin-top: 0.25rem; font-size: 0.8rem; letter-spacing: 0.18em; text-transform: uppercase;
-      color: #4e342e; opacity: 0; transform: translateY(8px);
+      margin-top: 0.25rem;
+      font-size: 0.8rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #4e342e;
+      opacity: 0;
+      transform: translateY(8px);
       animation: introTextFade 1.2s ease-out 0.9s forwards;
     }
+
     .intro-tagline {
-      margin-top: 0.75rem; font-size: 1.05rem; font-weight: 700; color: #2e7d32;
-      padding: 0.55rem 1.3rem; position: relative;
+      margin-top: 0.75rem;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #2e7d32;
+      padding: 0.55rem 1.3rem;
+      position: relative;
       background: rgba(255, 255, 255, 0.9);
       border-radius: 55% 45% 60% 50% / 50% 60% 45% 55%;
       box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
       border: 2px solid rgba(76, 175, 80, 0.65);
       animation: taglinePop 1.3s cubic-bezier(0.25, 0.7, 0.3, 1.2) forwards;
-      transform: scale(0.7); opacity: 0;
+      transform: scale(0.7);
+      opacity: 0;
     }
+
     .intro-tagline::before {
-      content: ""; position: absolute; width: 14px; height: 14px; top: -6px; right: -5px;
-      background: #a5d6a7; border-radius: 60% 40% 65% 35% / 55% 50% 45% 60%;
+      content: "";
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      top: -6px;
+      right: -5px;
+      background: #a5d6a7;
+      border-radius: 60% 40% 65% 35% / 55% 50% 45% 60%;
       box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
     }
+
     .intro-tagline::after {
-      content: ""; position: absolute; width: 10px; height: 10px; bottom: -5px; left: -3px;
-      background: #c5e1a5; border-radius: 50% 60% 40% 60%;
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      bottom: -5px;
+      left: -3px;
+      background: #c5e1a5;
+      border-radius: 50% 60% 40% 60%;
       box-shadow: 0 0 6px rgba(0, 0, 0, 0.18);
     }
-    .intro-skip {
-      position: static; margin-top: 1.8rem;
-      padding: 0.45rem 1.2rem; border-radius: 999px;
-      border: 1px solid rgba(255, 255, 255, 0.8);
-      background: rgba(0, 0, 0, 0.25); color: #ffffff;
-      font-size: 0.85rem; cursor: pointer; backdrop-filter: blur(4px);
-      display: inline-flex; align-items: center; gap: 0.3rem;
-    }
-    .intro-skip::before { content: "⏩"; font-size: 0.9rem; }
-    .intro-skip:hover { background: rgba(0, 0, 0, 0.4); }
 
-    @keyframes taglinePop { 0%{transform:scale(0.7) translateY(6px);opacity:0} 60%{transform:scale(1.18) translateY(0);opacity:1} 100%{transform:scale(1) translateY(0);opacity:1} }
-    @keyframes introBgShift { 0%{background:radial-gradient(circle at top left,#4caf50 0%,#2e7d32 40%,#1b1f1a 100%)} 50%{background:radial-gradient(circle at top right,#66bb6a 0%,#43a047 40%,#1b1f1a 100%)} 100%{background:radial-gradient(circle at bottom,#2e7d32 0%,#1b5e20 40%,#000000 100%)} }
-    @keyframes introOrbit { 0%{transform:rotate(0deg) translateY(0)} 50%{transform:rotate(3deg) translateY(-6px)} 100%{transform:rotate(-3deg) translateY(4px)} }
-    @keyframes introBlob { 0%{border-radius:55% 60% 70% 45% / 55% 45% 65% 60%;transform:scale(1)} 50%{border-radius:60% 50% 55% 65% / 60% 55% 60% 50%;transform:scale(1.04) translateY(-4px)} 100%{border-radius:48% 70% 60% 50% / 50% 50% 70% 60%;transform:scale(1.07) translateY(-8px)} }
-    @keyframes introGlow { 0%{opacity:0.7;transform:translate3d(0,0,0) scale(1)} 100%{opacity:1;transform:translate3d(6px,-4px,0) scale(1.08)} }
-    @keyframes introTextGrow { 0%{opacity:0;transform:scale(0.6) translateY(16px);letter-spacing:0.24em} 60%{opacity:1;transform:scale(1.15) translateY(0);letter-spacing:0.3em} 100%{opacity:1;transform:scale(1) translateY(0);letter-spacing:0.18em} }
-    @keyframes introTextFade { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
+    .intro-skip {
+      position: static;
+      bottom: auto;
+      right: auto;
+      transform: none;
+      margin-top: 1.8rem;
+
+      padding: 0.45rem 1.2rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      background: rgba(0, 0, 0, 0.25);
+      color: #ffffff;
+      font-size: 0.85rem;
+      cursor: pointer;
+      backdrop-filter: blur(4px);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .intro-skip::before {
+      content: "⏩";
+      font-size: 0.9rem;
+    }
+
+    .intro-skip:hover {
+      background: rgba(0, 0, 0, 0.4);
+    }
+
+    @keyframes taglinePop {
+      0% { transform: scale(0.7) translateY(6px); opacity: 0; }
+      60% { transform: scale(1.18) translateY(0); opacity: 1; }
+      100% { transform: scale(1) translateY(0); opacity: 1; }
+    }
+
+    @keyframes introBgShift {
+      0% { background: radial-gradient(circle at top left, #4caf50 0%, #2e7d32 40%, #1b1f1a 100%); }
+      50% { background: radial-gradient(circle at top right, #66bb6a 0%, #43a047 40%, #1b1f1a 100%); }
+      100% { background: radial-gradient(circle at bottom, #2e7d32 0%, #1b5e20 40%, #000000 100%); }
+    }
+
+    @keyframes introOrbit {
+      0% { transform: rotate(0deg) translateY(0); }
+      50% { transform: rotate(3deg) translateY(-6px); }
+      100% { transform: rotate(-3deg) translateY(4px); }
+    }
+
+    @keyframes introBlob {
+      0% { border-radius: 55% 60% 70% 45% / 55% 45% 65% 60%; transform: scale(1); }
+      50% { border-radius: 60% 50% 55% 65% / 60% 55% 60% 50%; transform: scale(1.04) translateY(-4px); }
+      100% { border-radius: 48% 70% 60% 50% / 50% 50% 70% 60%; transform: scale(1.07) translateY(-8px); }
+    }
+
+    @keyframes introGlow {
+      0% { opacity: 0.7; transform: translate3d(0, 0, 0) scale(1); }
+      100% { opacity: 1; transform: translate3d(6px, -4px, 0) scale(1.08); }
+    }
+
+    @keyframes introTextGrow {
+      0% { opacity: 0; transform: scale(0.6) translateY(16px); letter-spacing: 0.24em; }
+      60% { opacity: 1; transform: scale(1.15) translateY(0); letter-spacing: 0.3em; }
+      100% { opacity: 1; transform: scale(1) translateY(0); letter-spacing: 0.18em; }
+    }
+
+    @keyframes introTextFade {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
 
     /* HEADER + NAV */
     header {
-      position: sticky; top: 0; z-index: 100;
+      position: sticky;
+      top: 0;
+      z-index: 100;
       background-color: rgba(249, 249, 245, 0.96);
       backdrop-filter: blur(6px);
       border-bottom: 1px solid var(--color-border);
     }
-    .nav-container {
-      max-width: var(--max-width); margin: 0 auto;
-      padding: 0.6rem 1.25rem;
-      display: flex; align-items: center; justify-content: space-between;
-      gap: 0.75rem;
-    }
-    .logo {
-      font-weight: 800; font-size: 1.1rem; letter-spacing: 0.06em;
-      color: var(--color-main-dark);
-      display: flex; flex-direction: column; line-height: 1.1;
-      flex: 0 0 auto;
-    }
-    .logo span.en { font-size: 0.75rem; opacity: 0.8; }
 
-    nav ul { list-style: none; display: flex; gap: 1.1rem; font-size: 0.95rem; align-items: center; }
-    nav a { position: relative; padding-bottom: 0.2rem; }
+    .nav-container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0.6rem 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-weight: 800;
+      font-size: 1.1rem;
+      letter-spacing: 0.06em;
+      color: var(--color-main-dark);
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+
+    .logo span.en {
+      font-size: 0.75rem;
+      opacity: 0.8;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.2rem;
+      font-size: 0.95rem;
+    }
+
+    nav a {
+      position: relative;
+      padding-bottom: 0.2rem;
+    }
+
     nav a::after {
-      content: ""; position: absolute; left: 0; bottom: 0;
-      width: 0; height: 2px; background-color: var(--color-main);
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background-color: var(--color-main);
       transition: width 0.2s ease-out;
     }
-    nav a:hover::after { width: 100%; }
 
-    .nav-actions { display: flex; align-items: center; gap: 0.6rem; }
-    .btn {
-      display: inline-flex; align-items: center; justify-content: center;
-      padding: 0.5rem 1rem; border-radius: 999px;
-      border: 1px solid transparent; font-size: 0.9rem;
-      cursor: pointer; transition: all 0.2s ease-out; white-space: nowrap;
+    nav a:hover::after {
+      width: 100%;
     }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: all 0.2s ease-out;
+      white-space: nowrap;
+    }
+
     .btn-primary {
-      background-color: var(--color-main); color: #ffffff;
+      background-color: var(--color-main);
+      color: #ffffff;
       border-color: var(--color-main-dark);
       font-weight: 600;
       box-shadow: 0 4px 0 rgba(28, 94, 32, 0.8);
     }
-    .btn-primary:active { transform: translateY(2px); box-shadow: 0 1px 0 rgba(28, 94, 32, 0.8); }
-    .btn-outline { background-color: #ffffff; color: var(--color-main-dark); border-color: var(--color-main); }
-    .btn-outline:active { transform: translateY(2px); box-shadow: inset 0 1px 2px rgba(0,0,0,0.1); }
 
-    .nav-menu-toggle { display: none; border: none; background: transparent; font-size: 1.4rem; cursor: pointer; }
-    .nav-links { display: flex; align-items: center; gap: 1rem; flex: 1 1 auto; justify-content: flex-end; }
+    .btn-primary:active {
+      transform: translateY(2px);
+      box-shadow: 0 1px 0 rgba(28, 94, 32, 0.8);
+    }
 
-    /* ✅ 메뉴에 외부 링크(블로그/스마트플레이스) 추가 */
-    .nav-external { display: inline-flex; gap: 0.45rem; align-items: center; }
+    .btn-outline {
+      background-color: #ffffff;
+      color: var(--color-main-dark);
+      border-color: var(--color-main);
+    }
+
+    .btn-outline:active {
+      transform: translateY(2px);
+      box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+    }
+
+    .nav-menu-toggle {
+      display: none;
+      border: none;
+      background: transparent;
+      font-size: 1.4rem;
+      cursor: pointer;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
 
     @media (max-width: 768px) {
       nav ul {
-        position: fixed; top: 56px; left: 0; right: 0;
+        position: fixed;
+        top: 56px;
+        left: 0;
+        right: 0;
         background-color: rgba(249, 249, 245, 0.98);
-        flex-direction: column; padding: 1rem 1.25rem 1.5rem;
+        flex-direction: column;
+        padding: 1rem 1.25rem 1.5rem;
         border-bottom: 1px solid var(--color-border);
-        transform: translateY(-100%); opacity: 0; pointer-events: none;
+        transform: translateY(-100%);
+        opacity: 0;
+        pointer-events: none;
         transition: all 0.25s ease-out;
       }
-      nav ul.open { transform: translateY(0); opacity: 1; pointer-events: auto; }
-      .nav-actions { display: none; }
-      .nav-menu-toggle { display: block; }
-      .nav-external { justify-content: center; flex-wrap: wrap; }
+
+      nav ul.open {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+      .nav-actions {
+        display: none;
+      }
+
+      .nav-menu-toggle {
+        display: block;
+      }
     }
 
-    main { max-width: var(--max-width); margin: 0 auto; padding: 0 1.25rem 4rem; overflow-x: hidden; }
-    section { padding: 3.5rem 0; scroll-margin-top: 80px; }
-    .section-heading { font-size: 1.6rem; font-weight: 700; margin-bottom: 1rem; color: var(--color-main-dark); }
-    .section-subheading { font-size: 0.95rem; color: #666666; margin-bottom: 2rem; }
+    main {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.25rem 4rem;
+      overflow-x: hidden;
+    }
+
+    section {
+      padding: 3.5rem 0;
+      scroll-margin-top: 80px;
+    }
+
+    .section-heading {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--color-main-dark);
+    }
+
+    .section-subheading {
+      font-size: 0.95rem;
+      color: #666666;
+      margin-bottom: 2rem;
+    }
 
     /* HERO */
-    .hero { display: grid; grid-template-columns: 1.15fr 1fr; gap: 2.2rem; align-items: center; padding-top: 2.2rem; }
+    .hero {
+      display: grid;
+      grid-template-columns: 1.15fr 1fr;
+      gap: 2.2rem;
+      align-items: center;
+      padding-top: 2.2rem;
+    }
+
     .hero-tag {
-      display: inline-flex; align-items: center; gap: 0.4rem;
-      padding: 0.25rem 0.75rem; border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
       font-size: 0.8rem;
       background-color: rgba(76, 175, 80, 0.08);
       color: var(--color-main-dark);
       margin-bottom: 1rem;
     }
-    .hero-title { font-size: 2.2rem; font-weight: 800; margin-bottom: 0.8rem; line-height: 1.25; max-width: 18ch; color: var(--color-text); }
-    .hero-title .highlight { color: var(--color-main-dark); }
-    .hero-subtitle { font-size: 1rem; color: #555555; margin-bottom: 1.0rem; max-width: 32ch; }
-    .hero-buttons { display: flex; gap: 0.7rem; margin-bottom: 0.9rem; flex-wrap: wrap; }
-    .hero-meta { font-size: 0.85rem; color: #777777; }
-    .hero-meta strong { color: var(--color-main-dark); }
-    .hero-image { position: relative; border-radius: 24px; overflow: hidden; min-height: 260px; box-shadow: 0 18px 35px rgba(0, 0, 0, 0.18); }
-    .hero-image::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.35), transparent 50%); }
+
+    .hero-title {
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin-bottom: 0.8rem;
+      line-height: 1.25;
+      max-width: 18ch;
+      color: var(--color-text);
+    }
+
+    .hero-title .highlight {
+      color: var(--color-main-dark);
+    }
+
+    .hero-subtitle {
+      font-size: 1rem;
+      color: #555555;
+      margin-bottom: 1.4rem;
+      max-width: 32ch;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 0.7rem;
+      margin-bottom: 1.1rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-meta {
+      font-size: 0.85rem;
+      color: #777777;
+    }
+
+    .hero-meta strong {
+      color: var(--color-main-dark);
+    }
+
+    .hero-image {
+      position: relative;
+      border-radius: 24px;
+      overflow: hidden;
+      min-height: 260px;
+      box-shadow: 0 18px 35px rgba(0, 0, 0, 0.18);
+    }
+
+    .hero-image::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.35), transparent 50%);
+    }
+
     .hero-stat-badge {
-      position: absolute; bottom: 14px; left: 14px;
+      position: absolute;
+      bottom: 14px;
+      left: 14px;
       background-color: rgba(255, 255, 255, 0.95);
-      border-radius: 16px; padding: 0.6rem 0.9rem;
-      font-size: 0.8rem; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+      border-radius: 16px;
+      padding: 0.6rem 0.9rem;
+      font-size: 0.8rem;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
       z-index: 1;
     }
-    .hero-stat-badge strong { color: var(--color-main-dark); }
+
+    .hero-stat-badge strong {
+      color: var(--color-main-dark);
+    }
 
     .btn-cta-main {
       background: linear-gradient(180deg, #ffca28, #ffa000);
-      color: #1b1f1a; font-weight: 800;
-      border-radius: 40px; padding: 0.8rem 1.7rem;
-      font-size: 0.95rem; box-shadow: 0 6px 0 #c68400;
+      color: #1b1f1a;
+      font-weight: 800;
+      border-radius: 40px;
+      padding: 0.8rem 1.7rem;
+      font-size: 0.95rem;
+      box-shadow: 0 6px 0 #c68400;
       border: 1px solid #f9a825;
     }
-    .btn-cta-main:active { transform: translateY(3px); box-shadow: 0 2px 0 #c68400; }
-    .btn-cta-sub { border-radius: 40px; border: 1px dashed var(--color-border); padding: 0.7rem 1.4rem; font-size: 0.9rem; background-color: #ffffff; }
 
-    @media (max-width: 768px) { .hero { grid-template-columns: 1fr; padding-top: 1.5rem; } }
-    @media (max-width: 480px) { .hero-title { font-size: 1.9rem; } .hero-subtitle { font-size: 0.9rem; } }
+    .btn-cta-main:active {
+      transform: translateY(3px);
+      box-shadow: 0 2px 0 #c68400;
+    }
+
+    .btn-cta-sub {
+      border-radius: 40px;
+      border: 1px dashed var(--color-border);
+      padding: 0.7rem 1.4rem;
+      font-size: 0.9rem;
+      background-color: #ffffff;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        grid-template-columns: 1fr;
+        padding-top: 1.5rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-title { font-size: 1.9rem; }
+      .hero-subtitle { font-size: 0.9rem; }
+    }
 
     /* ABOUT */
-    .about-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 2rem; }
-    .badge-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 0.8rem; margin-top: 1.2rem; }
-    .badge-card { padding: 0.8rem 0.9rem; border-radius: 16px; border: 1px solid var(--color-border); background-color: #ffffff; font-size: 0.85rem; }
-    .badge-card-title { font-weight: 600; margin-bottom: 0.3rem; color: var(--color-main-dark); }
-    @media (max-width: 768px) { .about-grid { grid-template-columns: 1fr; } }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      gap: 2rem;
+    }
+
+    .badge-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 0.8rem;
+      margin-top: 1.2rem;
+    }
+
+    .badge-card {
+      padding: 0.8rem 0.9rem;
+      border-radius: 16px;
+      border: 1px solid var(--color-border);
+      background-color: #ffffff;
+      font-size: 0.85rem;
+    }
+
+    .badge-card-title {
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+      color: var(--color-main-dark);
+    }
+
+    @media (max-width: 768px) {
+      .about-grid { grid-template-columns: 1fr; }
+    }
 
     /* SERVICES */
-    .service-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.2rem; }
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.2rem;
+    }
+
     .service-card {
-      border-radius: 18px; border: 1px solid var(--color-border);
-      background-color: #ffffff; padding: 1.2rem 1rem 1.3rem;
-      display: flex; flex-direction: column; justify-content: space-between;
+      border-radius: 18px;
+      border: 1px solid var(--color-border);
+      background-color: #ffffff;
+      padding: 1.2rem 1rem 1.3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       font-size: 0.9rem;
     }
-    .service-title { font-size: 1rem; font-weight: 700; margin-bottom: 0.4rem; }
-    .service-body { font-size: 0.88rem; color: #555555; margin-bottom: 0.8rem; }
-    .service-meta { font-size: 0.8rem; color: #777777; margin-bottom: 0.6rem; }
-    .service-footer { display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; }
-    .service-tag { padding: 0.2rem 0.6rem; border-radius: 999px; background-color: rgba(255, 179, 0, 0.11); color: #9c6a00; font-weight: 500; }
-    @media (max-width: 900px) { .service-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-    @media (max-width: 640px) { .service-grid { grid-template-columns: 1fr; } }
+
+    .service-title {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+    }
+
+    .service-body {
+      font-size: 0.88rem;
+      color: #555555;
+      margin-bottom: 0.8rem;
+    }
+
+    .service-meta {
+      font-size: 0.8rem;
+      color: #777777;
+      margin-bottom: 0.6rem;
+    }
+
+    .service-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+    }
+
+    .service-tag {
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      background-color: rgba(255, 179, 0, 0.11);
+      color: #9c6a00;
+      font-weight: 500;
+    }
+
+    @media (max-width: 900px) {
+      .service-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 640px) {
+      .service-grid { grid-template-columns: 1fr; }
+    }
 
     /* PORTFOLIO / GALLERY */
-    .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
-    @media (max-width: 768px) {
-      .portfolio-grid { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; gap: 0.75rem; padding-bottom: 0.4rem; }
-      .portfolio-card { flex: 0 0 85%; scroll-snap-align: center; }
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
     }
-    .portfolio-card { background-color: #ffffff; border-radius: 18px; overflow: hidden; border: 1px solid var(--color-border); font-size: 0.85rem; display: flex; flex-direction: column; }
-    .portfolio-thumb { width: 100%; height: 140px; object-fit: cover; }
-    .portfolio-body { padding: 0.7rem 0.9rem 0.9rem; }
-    .portfolio-title { font-weight: 600; margin-bottom: 0.2rem; }
-    .portfolio-meta { color: #777777; font-size: 0.8rem; }
 
-    .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; }
     @media (max-width: 768px) {
-      .gallery-grid { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; gap: 0.75rem; padding-bottom: 0.4rem; }
-      .gallery-item { flex: 0 0 75%; scroll-snap-align: center; }
-      .gallery-item img { height: 180px; }
+      .portfolio-grid {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        gap: 0.75rem;
+        padding-bottom: 0.4rem;
+      }
+
+      .portfolio-card {
+        flex: 0 0 85%;
+        scroll-snap-align: center;
+      }
     }
-    .gallery-item img { width: 100%; height: 160px; object-fit: cover; border-radius: 16px; box-shadow: 0 6px 14px rgba(0,0,0,0.15); }
+
+    .portfolio-card {
+      background-color: #ffffff;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid var(--color-border);
+      font-size: 0.85rem;
+      display: flex;
+      flex-direction: column;
+      cursor: pointer; /* ✅ 클릭 가능 표시 */
+    }
+
+    .portfolio-thumb {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+    }
+
+    .portfolio-body {
+      padding: 0.7rem 0.9rem 0.9rem;
+    }
+
+    .portfolio-title {
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+    }
+
+    .portfolio-meta {
+      color: #777777;
+      font-size: 0.8rem;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .gallery-grid {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        gap: 0.75rem;
+        padding-bottom: 0.4rem;
+      }
+
+      .gallery-item {
+        flex: 0 0 75%;
+        scroll-snap-align: center;
+      }
+
+      .gallery-item img {
+        height: 180px;
+      }
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 16px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+    }
 
     /* CONTACT */
-    .contact-layout { display: grid; grid-template-columns: 1.4fr 1fr; gap: 2rem; }
-    @media (max-width: 768px) { .contact-layout { grid-template-columns: 1fr; } }
-    .contact-tabs { display: flex; gap: 0.5rem; margin-bottom: 1.2rem; flex-wrap: wrap; }
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .contact-layout { grid-template-columns: 1fr; }
+    }
+
+    .contact-tabs {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 1.2rem;
+      flex-wrap: wrap;
+    }
+
     .contact-tab-btn {
-      flex: 1 1 160px; padding: 0.5rem 0.8rem; border-radius: 999px;
-      border: 1px solid var(--color-border); background-color: #ffffff;
-      font-size: 0.85rem; cursor: pointer; text-align: center;
+      flex: 1 1 160px;
+      padding: 0.5rem 0.8rem;
+      border-radius: 999px;
+      border: 1px solid var(--color-border);
+      background-color: #ffffff;
+      font-size: 0.85rem;
+      cursor: pointer;
+      text-align: center;
     }
-    .contact-tab-btn.active { background-color: rgba(76, 175, 80, 0.1); border-color: var(--color-main); color: var(--color-main-dark); font-weight: 600; }
-    .contact-form { background-color: #ffffff; border-radius: 18px; padding: 1.4rem 1.3rem; border: 1px solid var(--color-border); font-size: 0.9rem; }
+
+    .contact-tab-btn.active {
+      background-color: rgba(76, 175, 80, 0.1);
+      border-color: var(--color-main);
+      color: var(--color-main-dark);
+      font-weight: 600;
+    }
+
+    .contact-form {
+      background-color: #ffffff;
+      border-radius: 18px;
+      padding: 1.4rem 1.3rem;
+      border: 1px solid var(--color-border);
+      font-size: 0.9rem;
+    }
+
     .contact-form.hidden { display: none; }
+
     .contact-form-group { margin-bottom: 0.9rem; }
-    label { display: block; font-size: 0.8rem; margin-bottom: 0.25rem; color: #555555; }
+
+    label {
+      display: block;
+      font-size: 0.8rem;
+      margin-bottom: 0.25rem;
+      color: #555555;
+    }
+
     input, select, textarea {
-      width: 100%; border-radius: 10px; border: 1px solid var(--color-border);
-      padding: 0.5rem 0.65rem; font-size: 0.9rem; font-family: inherit;
-      outline: none; transition: border-color 0.15s ease-out, box-shadow 0.15s ease-out;
-      background-color: #fcfcf9; box-sizing: border-box;
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid var(--color-border);
+      padding: 0.5rem 0.65rem;
+      font-size: 0.9rem;
+      font-family: inherit;
+      outline: none;
+      transition: border-color 0.15s ease-out, box-shadow 0.15s ease-out;
+      background-color: #fcfcf9;
+      box-sizing: border-box;
     }
-    input:focus, select:focus, textarea:focus { border-color: var(--color-main); box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.16); background-color: #ffffff; }
+
+    input:focus, select:focus, textarea:focus {
+      border-color: var(--color-main);
+      box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.16);
+      background-color: #ffffff;
+    }
+
     textarea { min-height: 110px; resize: vertical; }
-    .option-row { display: flex; flex-wrap: wrap; gap: 0.4rem; font-size: 0.84rem; }
-    .option-row label {
-      display: inline-flex; align-items: center; gap: 0.25rem;
-      padding: 0.2rem 0.6rem; border-radius: 999px;
-      border: 1px solid var(--color-border); background-color: #fafafa;
-      flex: 0 0 auto; white-space: nowrap;
+
+    .option-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      font-size: 0.84rem;
     }
+
+    .option-row label {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      border: 1px solid var(--color-border);
+      background-color: #fafafa;
+      flex: 0 0 auto;
+      white-space: nowrap;
+    }
+
     .option-row input[type="radio"] { margin: 0; }
+
     input[type="radio"], input[type="checkbox"] { accent-color: var(--color-main); }
 
-    .contact-buttons { margin-top: 1.2rem; text-align: center; display: flex; flex-direction: column; gap: 0.5rem; align-items: center; justify-content: center; }
-    .contact-buttons-row { display: flex; gap: 0.6rem; flex-wrap: wrap; justify-content: center; }
+    .contact-buttons {
+      margin-top: 1.2rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .contact-buttons-row {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
 
     .btn-full-primary {
-      display: inline-flex; align-items: center; justify-content: center;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
       background: linear-gradient(180deg, #ffca28, #ffa000);
-      color: #1b1f1a; font-weight: 800;
-      border-radius: 999px; box-shadow: 0 6px 0 #c68400;
-      border: 1px solid #f9a825; padding: 0.7rem 1.6rem; font-size: 0.95rem;
+      color: #1b1f1a;
+      font-weight: 800;
+      border-radius: 999px;
+      box-shadow: 0 6px 0 #c68400;
+      border: 1px solid #f9a825;
+      padding: 0.7rem 1.6rem;
+      font-size: 0.95rem;
     }
-    .btn-full-primary:active { transform: translateY(3px); box-shadow: 0 2px 0 #c68400; }
+
+    .btn-full-primary:active {
+      transform: translateY(3px);
+      box-shadow: 0 2px 0 #c68400;
+    }
+
     .btn-contact-sub {
-      border-radius: 999px; border: 1px dashed var(--color-border);
-      padding: 0.5rem 1rem; font-size: 0.85rem; background-color: #ffffff;
-      display: inline-flex; align-items: center; gap: 0.3rem;
+      border-radius: 999px;
+      border: 1px dashed var(--color-border);
+      padding: 0.5rem 1rem;
+      font-size: 0.85rem;
+      background-color: #ffffff;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
     }
 
-    .contact-info-card { background-color: #ffffff; border-radius: 18px; padding: 1.3rem 1.2rem; border: 1px solid var(--color-border); font-size: 0.88rem; }
+    .contact-info-card {
+      background-color: #ffffff;
+      border-radius: 18px;
+      padding: 1.3rem 1.2rem;
+      border: 1px solid var(--color-border);
+      font-size: 0.88rem;
+    }
+
     .contact-info-item { margin-bottom: 0.6rem; }
-    .contact-highlight { margin-top: 1rem; padding: 0.7rem 0.8rem; border-radius: 12px; background-color: rgba(46, 125, 50, 0.06); font-size: 0.82rem; }
 
-    /* QUICK MENU */
-    .quick-menu { position: fixed; top: 90px; right: 12px; z-index: 120; font-size: 0.85rem; }
-    .quick-toggle {
-      width: 40px; height: 40px; border-radius: 50%;
-      border: none; background: #ffffff;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.18);
-      cursor: pointer; display: flex; align-items: center; justify-content: center;
-      color: var(--color-main-dark); font-size: 1.2rem;
+    .contact-highlight {
+      margin-top: 1rem;
+      padding: 0.7rem 0.8rem;
+      border-radius: 12px;
+      background-color: rgba(46, 125, 50, 0.06);
+      font-size: 0.82rem;
     }
+
+    .quick-menu {
+      position: fixed;
+      top: 90px;
+      right: 12px;
+      z-index: 120;
+      font-size: 0.85rem;
+    }
+
+    .quick-toggle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: none;
+      background: #ffffff;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.18);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-main-dark);
+      font-size: 1.2rem;
+    }
+
     .quick-panel {
-      position: absolute; top: 48px; right: 0;
-      background-color: #ffffff; border-radius: 14px;
+      position: absolute;
+      top: 48px;
+      right: 0;
+      background-color: #ffffff;
+      border-radius: 14px;
       box-shadow: 0 12px 26px rgba(0,0,0,0.18);
-      padding: 0.7rem 0.9rem; min-width: 190px;
+      padding: 0.7rem 0.9rem;
+      min-width: 170px;
       display: none;
     }
+
     .quick-panel.open { display: block; }
-    .quick-panel h4 { font-size: 0.8rem; margin-bottom: 0.4rem; color: var(--color-main-dark); }
-    .quick-panel a { display: block; padding: 0.2rem 0; font-size: 0.8rem; }
-    .quick-panel hr { border: none; border-top: 1px solid var(--color-border); margin: 0.4rem 0; }
-    @media (max-width: 600px) { .quick-menu { top: auto; bottom: 18px; } }
 
-    footer { border-top: 1px solid var(--color-border); padding: 1.2rem 1.25rem 2rem; font-size: 0.78rem; color: #777777; background-color: #fbfbf7; }
-    .footer-inner { max-width: var(--max-width); margin: 0 auto; display: flex; flex-direction: column; gap: 0.5rem; }
-    .footer-top { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; }
-    .footer-company { font-weight: 600; color: var(--color-main-dark); }
-    .footer-bottom { font-size: 0.75rem; color: #999999; }
-    @media (max-width: 480px) { section { padding: 2.6rem 0; } }
+    .quick-panel h4 {
+      font-size: 0.8rem;
+      margin-bottom: 0.4rem;
+      color: var(--color-main-dark);
+    }
 
-    /* FORM SUBMIT */
-    .form-submit-wrapper { margin-top: 1.4rem; text-align: center; }
-    .form-submit-hint { margin-top: 0.4rem; font-size: 0.8rem; color: #777; }
+    .quick-panel a {
+      display: block;
+      padding: 0.2rem 0;
+      font-size: 0.8rem;
+    }
+
+    .quick-panel hr {
+      border: none;
+      border-top: 1px solid var(--color-border);
+      margin: 0.4rem 0;
+    }
+
+    @media (max-width: 600px) {
+      .quick-menu { top: auto; bottom: 18px; }
+    }
+
+    footer {
+      border-top: 1px solid var(--color-border);
+      padding: 1.2rem 1.25rem 2rem;
+      font-size: 0.78rem;
+      color: #777777;
+      background-color: #fbfbf7;
+    }
+
+    .footer-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .footer-company {
+      font-weight: 600;
+      color: var(--color-main-dark);
+    }
+
+    .footer-bottom {
+      font-size: 0.75rem;
+      color: #999999;
+    }
+
+    @media (max-width: 480px) {
+      section { padding: 2.6rem 0; }
+    }
+
+    .form-submit-wrapper {
+      margin-top: 1.4rem;
+      text-align: center;
+    }
+
+    .form-submit-hint {
+      margin-top: 0.4rem;
+      font-size: 0.8rem;
+      color: #777;
+    }
+
     .form-submit-btn {
       background: linear-gradient(180deg, #ffca28, #ffa000);
-      color: #1b1f1a; font-weight: 800;
-      border-radius: 999px; padding: 0.75rem 1.9rem;
-      font-size: 0.95rem; box-shadow: 0 6px 0 #c68400;
-      border: 1px solid #f9a825; cursor: pointer;
+      color: #1b1f1a;
+      font-weight: 800;
+      border-radius: 999px;
+      padding: 0.75rem 1.9rem;
+      font-size: 0.95rem;
+      box-shadow: 0 6px 0 #c68400;
+      border: 1px solid #f9a825;
+      cursor: pointer;
       transition: transform 0.12s ease, box-shadow 0.12s ease, opacity 0.2s ease;
     }
-    .form-submit-btn:hover { box-shadow: 0 8px 0 #c68400; transform: translateY(-1px); }
-    .form-submit-btn:active { transform: translateY(3px); box-shadow: 0 2px 0 #c68400; }
+
+    .form-submit-btn:hover {
+      box-shadow: 0 8px 0 #c68400;
+      transform: translateY(-1px);
+    }
+
+    .form-submit-btn:active {
+      transform: translateY(3px);
+      box-shadow: 0 2px 0 #c68400;
+    }
+
     .form-submit-btn.is-sending { opacity: 0.7; cursor: wait; }
-    .form-submit-btn.is-success { background: #2e7d32; box-shadow: 0 6px 0 #1b5e20; border-color: #2e7d32; color: #fff; }
+
+    .form-submit-btn.is-success {
+      background: #2e7d32;
+      box-shadow: 0 6px 0 #1b5e20;
+      border-color: #2e7d32;
+      color: #fff;
+    }
+
+    /* ================================
+       ✅ (추가) 포트폴리오 연결 선택 모달
+       ================================ */
+    .link-modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.45);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      padding: 1rem;
+    }
+    .link-modal.open { display: flex; }
+
+    .link-modal-card {
+      width: min(420px, 92vw);
+      background: #fff;
+      border-radius: 18px;
+      border: 1px solid var(--color-border);
+      box-shadow: 0 18px 40px rgba(0,0,0,0.25);
+      padding: 1rem 1rem 0.9rem;
+    }
+    .link-modal-title {
+      font-weight: 800;
+      color: var(--color-main-dark);
+      font-size: 1.05rem;
+      margin-bottom: 0.35rem;
+    }
+    .link-modal-desc {
+      color: #666;
+      font-size: 0.88rem;
+      margin-bottom: 0.85rem;
+    }
+    .link-modal-actions {
+      display: flex;
+      gap: 0.55rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .link-modal-btn {
+      flex: 1 1 150px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.65rem 0.9rem;
+      border-radius: 999px;
+      border: 1px solid var(--color-border);
+      background: #fff;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+    .link-modal-btn.primary {
+      background: linear-gradient(180deg, #ffca28, #ffa000);
+      border-color: #f9a825;
+    }
+    .link-modal-close {
+      margin-top: 0.75rem;
+      text-align: center;
+    }
+    .link-modal-close button {
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      color: #666;
+      font-size: 0.85rem;
+      padding: 0.4rem 0.6rem;
+    }
   </style>
 
   <script type="application/ld+json">
@@ -433,6 +1172,7 @@
 </head>
 
 <body>
+
   <!-- INTRO SPLASH -->
   <div id="intro">
     <div class="intro-orbit">
@@ -445,7 +1185,9 @@
         </div>
       </div>
     </div>
-    <button class="intro-skip" type="button">skip!</button>
+    <button class="intro-skip" type="button">
+      skip!
+    </button>
   </div>
 
   <!-- HEADER / NAV -->
@@ -456,10 +1198,12 @@
         <span class="en">웰빙푸드</span>
       </a>
 
-      <button class="nav-menu-toggle" type="button" aria-label="메뉴 열기">☰</button>
+      <button class="nav-menu-toggle" aria-label="메뉴 열기">
+        ☰
+      </button>
 
       <div class="nav-links">
-        <nav aria-label="주요 메뉴">
+        <nav>
           <ul id="navMenu">
             <li><a href="#about">회사소개</a></li>
             <li><a href="#services">서비스</a></li>
@@ -467,18 +1211,11 @@
             <li><a href="#gallery">메뉴 갤러리</a></li>
             <li><a href="#contact">문의하기</a></li>
 
-            <!-- ✅ 외부 링크(추가/수정) -->
-            <li class="nav-external">
-              <a class="chip chip-green" href="https://new.smartplace.naver.com/bizes/booking/519036" target="_blank" rel="noopener noreferrer">
-                📌 스마트플레이스
-              </a>
-              <a class="chip chip-accent" href="https://blog.naver.com/jibbab_kr" target="_blank" rel="noopener noreferrer">
-                🟡 블로그
-              </a>
-            </li>
+            <!-- ✅ 고친 링크 + 추가 링크 -->
+            <li><a href="https://blog.naver.com/jibbab_kr" target="_blank" rel="noopener noreferrer">🟡 블로그</a></li>
+            <li><a href="https://new.smartplace.naver.com/bizes/booking/519036" target="_blank" rel="noopener noreferrer">📌 스마트플레이스</a></li>
           </ul>
         </nav>
-
         <div class="nav-actions">
           <a href="tel:01063641170" class="btn btn-outline">전화 상담</a>
           <a href="#contact" class="btn btn-primary">식단 · 견적 문의</a>
@@ -489,7 +1226,7 @@
 
   <!-- QUICK POPUP MENU -->
   <div class="quick-menu">
-    <button class="quick-toggle" type="button" aria-label="바로가기 메뉴">☰</button>
+    <button class="quick-toggle" type="button">☰</button>
     <div class="quick-panel" id="quickPanel">
       <h4>바로가기</h4>
       <a href="#hero">· 맨 위로</a>
@@ -497,17 +1234,15 @@
       <a href="#portfolio">· 포트폴리오</a>
       <a href="#gallery">· 메뉴 갤러리</a>
       <a href="#contact">· 문의하기</a>
-
-      <hr />
-      <h4>포트폴리오 연계</h4>
-      <a href="https://new.smartplace.naver.com/bizes/booking/519036" target="_blank" rel="noopener noreferrer">📌 스마트플레이스(예약/정보)</a>
-      <a href="https://blog.naver.com/jibbab_kr" target="_blank" rel="noopener noreferrer">🟡 블로그(후기/현장)</a>
-
       <hr />
       <h4>연락하기</h4>
       <a href="tel:01063641170">📞 전화 010-6364-1170</a>
       <a href="sms:01063641170">💬 문자 보내기</a>
       <a href="https://open.kakao.com/o/pPvpjF2h" target="_blank" rel="noopener noreferrer">🟡 카카오채널 웰빙푸드</a>
+
+      <!-- ✅ 추가 -->
+      <a href="https://blog.naver.com/jibbab_kr" target="_blank" rel="noopener noreferrer">🟡 블로그</a>
+      <a href="https://new.smartplace.naver.com/bizes/booking/519036" target="_blank" rel="noopener noreferrer">📌 스마트플레이스</a>
     </div>
   </div>
 
@@ -515,38 +1250,29 @@
     <!-- HERO -->
     <section id="hero" class="hero">
       <div class="hero-copy">
-        <div class="hero-tag">집밥 스타일 한식 단체급식 · 도시락 · 출장뷔페</div>
-
+        <div class="hero-tag">
+          집밥 스타일 한식 단체급식 · 도시락 · 출장뷔페
+        </div>
         <h1 class="hero-title">
           집밥 한식 뷔페, <span class="highlight">웰빙푸드</span>
         </h1>
-
         <p class="hero-subtitle">
           비교 불가한 맛과 정성의 차이로<br />
           기업·학교·공장 단체급식을 책임지는 집밥 한식 뷔페 전문 업체입니다.
         </p>
-
         <div class="hero-buttons">
           <a href="tel:01063641170" class="btn btn-cta-main">📞 지금 바로 상담하기 (010-6364-1170)</a>
           <a href="sms:01063641170" class="btn btn-cta-sub">💬 부담 없이 문자 문의</a>
           <a href="https://open.kakao.com/o/pPvpjF2h" class="btn btn-cta-sub" target="_blank" rel="noopener noreferrer">🟡 카카오톡으로 빠른 상담</a>
-        </div>
 
-        <!-- ✅ 포트폴리오 ↔ 블로그/스마트플레이스 연계 버튼(추가) -->
-        <div class="chip-links" aria-label="외부 링크">
-          <a class="chip chip-green" href="https://new.smartplace.naver.com/bizes/booking/519036" target="_blank" rel="noopener noreferrer">
-            📌 스마트플레이스에서 보기
-          </a>
-          <a class="chip chip-accent" href="https://blog.naver.com/jibbab_kr" target="_blank" rel="noopener noreferrer">
-            🟡 블로그에서 포트폴리오 보기
-          </a>
+          <!-- ✅ 블로그 + 스마트플레이스 추가 -->
+          <a href="https://blog.naver.com/jibbab_kr" class="btn btn-cta-sub" target="_blank" rel="noopener noreferrer">🟡 블로그</a>
+          <a href="https://new.smartplace.naver.com/bizes/booking/519036" class="btn btn-cta-sub" target="_blank" rel="noopener noreferrer">📌 스마트플레이스</a>
         </div>
-
-        <p class="hero-meta" style="margin-top:0.9rem;">
+        <p class="hero-meta">
           <strong>주요 고객</strong> &nbsp;기업 · 공장 · 관공서 · 학교 · 학원 등
         </p>
       </div>
-
       <div class="hero-image">
         <picture>
           <source srcset="/image/hero-1.webp" type="image/webp">
@@ -563,7 +1289,7 @@
     <section id="about">
       <h2 class="section-heading">웰빙푸드는 이런 곳입니다.</h2>
       <p class="section-subheading">
-        부천 인천 서울서부 지역의 기업, 공장, 관공서, 학교 등 다양한 사업장에
+        부천 인천 서울서부 지역에 있는 기업, 공장, 관공서, 학교 등 다양한 사업장에
         집밥 스타일 한식 단체급식과 도시락, 출장뷔페 서비스를 제공합니다.
       </p>
 
@@ -575,11 +1301,10 @@
             기본 원칙으로 하고 있습니다.
           </p>
           <p style="font-size: 0.9rem;">
-            근로자와 학생, 공무원 등 다양한 연령과 직군이 함께 드시는 식사인 만큼,
-            영양 균형과 맛, 안전을 모두 고려한 식단을 제안드립니다.
+            근로자와 학생, 공무원 등 다양한 연령과 직군이 함께 드시는 식사인
+            만큼, 영양 균형과 맛, 안전을 모두 고려한 식단을 제안드립니다.
           </p>
         </div>
-
         <div>
           <div class="badge-grid">
             <div class="badge-card">
@@ -625,7 +1350,9 @@
           </div>
           <div class="service-footer">
             <span class="service-tag">정기 계약</span>
-            <a href="#contact" class="btn btn-outline" style="padding:0.35rem 0.7rem;font-size:0.8rem;" data-intent="regular-service">
+            <a href="#contact" class="btn btn-outline"
+               style="padding:0.35rem 0.7rem;font-size:0.8rem;"
+               data-intent="regular-service">
               상시 급식 상담
             </a>
           </div>
@@ -645,7 +1372,9 @@
           </div>
           <div class="service-footer">
             <span class="service-tag">도시락 전문</span>
-            <a href="#contact" class="btn btn-outline" style="padding:0.35rem 0.7rem;font-size:0.8rem;" data-intent="regular-lunchbox">
+            <a href="#contact" class="btn btn-outline"
+               style="padding:0.35rem 0.7rem;font-size:0.8rem;"
+               data-intent="regular-lunchbox">
               도시락 견적 문의
             </a>
           </div>
@@ -665,7 +1394,9 @@
           </div>
           <div class="service-footer">
             <span class="service-tag">원데이 행사</span>
-            <a href="#contact" class="btn btn-outline" style="padding:0.35rem 0.7rem;font-size:0.8rem;" data-intent="event-buffet">
+            <a href="#contact" class="btn btn-outline"
+               style="padding:0.35rem 0.7rem;font-size:0.8rem;"
+               data-intent="event-buffet">
               스케줄 확인
             </a>
           </div>
@@ -675,38 +1406,53 @@
 
     <!-- PORTFOLIO -->
     <section id="portfolio">
-      <h2 class="section-heading">집밥 한식 뷔페 포트폴리오</h2>
-
-      <!-- ✅ 섹션 상단에 연계 링크(추가) -->
-      <div class="chip-links" style="margin: -0.6rem 0 1.2rem;">
-        <a class="chip chip-accent" href="https://blog.naver.com/jibbab_kr" target="_blank" rel="noopener noreferrer">🟡 블로그에서 포트폴리오 더 보기</a>
-        <a class="chip chip-green" href="https://new.smartplace.naver.com/bizes/booking/519036" target="_blank" rel="noopener noreferrer">📌 스마트플레이스에서 정보/예약 보기</a>
-      </div>
-
+      <h2 class="section-heading">
+        집밥 한식 뷔페<br />포트폴리오
+        <a href="https://blog.naver.com/jibbab_kr" target="_blank" rel="noopener noreferrer">🟡 블로그</a>
+        <a href="https://new.smartplace.naver.com/bizes/booking/519036" target="_blank" rel="noopener noreferrer">📌 스마트플레이스</a>
+      </h2>
       <p class="section-subheading">
         실제 계약 이후, 고객사명과 현장 사진을 순차적으로 업데이트 합니다.
       </p>
 
       <div class="portfolio-grid">
-        <div class="portfolio-card">
+        <!-- ✅ 카드 클릭 시 모달이 뜨도록 data-blog / data-smartplace 추가 -->
+        <div class="portfolio-card"
+             data-title="세무서 상시 단체급식"
+             data-blog=""
+             data-smartplace="https://new.smartplace.naver.com/bizes/booking/519036">
           <img src="/image/buffet-line-1.jpg" alt="한식 뷔페 라인" class="portfolio-thumb" loading="lazy" />
           <div class="portfolio-body">
             <div class="portfolio-title">세무서 상시 단체급식</div>
-            <div class="portfolio-meta">주 5일 · 1일 2식(중/석식) · 80인 규모</div>
+            <div class="portfolio-meta">
+              주 5일 · 1일 2식(중/석식) · 80인 규모
+            </div>
           </div>
         </div>
-        <div class="portfolio-card">
+
+        <div class="portfolio-card"
+             data-title="공공기관 구내식당 운영"
+             data-blog=""
+             data-smartplace="https://new.smartplace.naver.com/bizes/booking/519036">
           <img src="/image/buffet-hall-1.jpg" alt="단체급식 식당 전경" class="portfolio-thumb" loading="lazy" />
           <div class="portfolio-body">
             <div class="portfolio-title">공공기관 구내식당 운영</div>
-            <div class="portfolio-meta">상시 운영 · 점심 한 끼 · 100인 이상 규모</div>
+            <div class="portfolio-meta">
+              상시 운영 · 점심 한 끼 · 100인 이상 규모
+            </div>
           </div>
         </div>
-        <div class="portfolio-card">
-          <img src="/image/buffet-hall-2.jpg" alt="관공서 내 한식 뷔페" class="portfolio-thumb" loading="lazy" />
+
+        <div class="portfolio-card"
+             data-title="관공서 내 한식 뷔페"
+             data-blog=""
+             data-smartplace="https://new.smartplace.naver.com/bizes/booking/519036">
+          <img src="/image/buffet-hall-2.jpg" alt="다른 현장 전경" class="portfolio-thumb" loading="lazy" />
           <div class="portfolio-body">
             <div class="portfolio-title">관공서 내 한식 뷔페</div>
-            <div class="portfolio-meta">교육 일정 맞춤 단체급식 · 행사 뷔페 겸용</div>
+            <div class="portfolio-meta">
+              교육 일정 맞춤 단체급식 · 행사 뷔페 겸용
+            </div>
           </div>
         </div>
       </div>
@@ -715,22 +1461,30 @@
     <!-- GALLERY -->
     <section id="gallery">
       <h2 class="section-heading">대표 메뉴 갤러리</h2>
-
-      <!-- ✅ 기존의 깨진 "&" 제거 + 연계 링크 깔끔하게 배치 -->
-      <div class="chip-links" style="margin: -0.6rem 0 1.2rem;">
-        <a class="chip chip-accent" href="https://blog.naver.com/jibbab_kr" target="_blank" rel="noopener noreferrer">🟡 블로그에서 메뉴 사진 더 보기</a>
-      </div>
+      &nbsp;
+      <a href="https://blog.naver.com/jibbab_kr" target="_blank" rel="noopener noreferrer">🟡 블로그</a>
+      <a href="https://new.smartplace.naver.com/bizes/booking/519036" target="_blank" rel="noopener noreferrer">📌 스마트플레이스</a>
 
       <p class="section-subheading">
         행사 성격과 인원에 맞춰 구성 가능한 대표 메뉴입니다.
       </p>
 
       <div class="gallery-grid">
-        <div class="gallery-item"><img src="/image/buffet-1.jpg" alt="뷔페 라인 2" loading="lazy" /></div>
-        <div class="gallery-item"><img src="/image/buffet-2.jpg" alt="메뉴 구성 1" loading="lazy" /></div>
-        <div class="gallery-item"><img src="/image/buffet-3.jpg" alt="메뉴 구성 2" loading="lazy" /></div>
-        <div class="gallery-item"><img src="/image/buffet-4.jpg" alt="메뉴 구성 3" loading="lazy" /></div>
-        <div class="gallery-item"><img src="/image/buffet-5.jpg" alt="메뉴 구성 4" loading="lazy" /></div>
+        <div class="gallery-item">
+          <img src="/image/buffet-1.jpg" alt="뷔페 라인 2" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="/image/buffet-2.jpg" alt="메뉴 구성 1" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="/image/buffet-3.jpg" alt="메뉴 구성 2" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="/image/buffet-4.jpg" alt="메뉴 구성 3" />
+        </div>
+        <div class="gallery-item">
+          <img src="/image/buffet-5.jpg" alt="메뉴 구성 4" />
+        </div>
       </div>
     </section>
 
@@ -742,17 +1496,11 @@
         아래에서 문의 유형을 먼저 선택하신 후, 해당 항목만 간단히 입력해 주세요.
       </p>
 
-      <!-- ✅ 문의 섹션에서도 외부 링크 제공 -->
-      <div class="chip-links" style="margin-bottom: 1.4rem;">
-        <a class="chip chip-green" href="https://new.smartplace.naver.com/bizes/booking/519036" target="_blank" rel="noopener noreferrer">📌 스마트플레이스</a>
-        <a class="chip chip-accent" href="https://blog.naver.com/jibbab_kr" target="_blank" rel="noopener noreferrer">🟡 블로그</a>
-      </div>
-
       <div class="contact-layout">
         <div>
           <div class="contact-tabs">
-            <button class="contact-tab-btn active" type="button" data-target="regular">상시 단체급식 문의</button>
-            <button class="contact-tab-btn" type="button" data-target="event">행사 · 출장뷔페 문의</button>
+            <button class="contact-tab-btn active" data-target="regular">상시 단체급식 문의</button>
+            <button class="contact-tab-btn" data-target="event">행사 · 출장뷔페 문의</button>
           </div>
 
           <form class="contact-form" id="contact-regular">
@@ -768,30 +1516,27 @@
               <label for="reg-phone">연락처</label>
               <input id="reg-phone" type="tel" placeholder="예) 010-6364-1170" />
             </div>
-
             <div class="contact-form-group">
               <label>희망 서비스 형태</label>
               <div class="option-row">
-                <label><input type="radio" name="reg-service" value="상시 단체급식" checked /> 상시 단체급식</label>
-                <label><input type="radio" name="reg-service" value="도시락" /> 도시락</label>
-                <label><input type="radio" name="reg-service" value="출장뷔페(행사)" /> 출장뷔페(행사)</label>
-                <label><input type="radio" name="reg-service" value="기타" /> 기타</label>
+                <label><input type="radio" name="reg-service" value="상시 단체급식" checked />상시 단체급식</label>
+                <label><input type="radio" name="reg-service" value="도시락" />도시락</label>
+                <label><input type="radio" name="reg-service" value="출장뷔페(행사)" />출장뷔페(행사)</label>
+                <label><input type="radio" name="reg-service" value="기타" />기타</label>
               </div>
             </div>
-
             <div class="contact-form-group">
               <label for="reg-headcount">상시 근무 인원수</label>
               <input id="reg-headcount" type="text" placeholder="예) 약 70명" />
             </div>
-
             <div class="contact-form-group">
               <label>필요 식사 (중복 선택 가능)</label>
               <div class="option-row">
-                <label><input type="checkbox" name="reg-meals" value="조식" /> 조식</label>
-                <label><input type="checkbox" name="reg-meals" value="중식" /> 중식</label>
-                <label><input type="checkbox" name="reg-meals" value="석식" /> 석식</label>
-                <label><input type="checkbox" name="reg-meals" value="야식" /> 야식</label>
-                <label><input type="checkbox" name="reg-meals" value="기타/협의" /> 기타 / 협의</label>
+                <label><input type="checkbox" name="reg-meals" value="조식" />조식</label>
+                <label><input type="checkbox" name="reg-meals" value="중식" />중식</label>
+                <label><input type="checkbox" name="reg-meals" value="석식" />석식</label>
+                <label><input type="checkbox" name="reg-meals" value="야식" />야식</label>
+                <label><input type="checkbox" name="reg-meals" value="기타/협의" />기타 / 협의</label>
               </div>
             </div>
 
@@ -799,28 +1544,35 @@
               <label for="reg-date">희망 시작일</label>
               <input id="reg-date" type="date" />
             </div>
-
             <div class="contact-form-group">
               <label for="reg-place">사업장 주소</label>
               <input id="reg-place" type="text" placeholder="예) 부천시 ○○로 00, ○○빌딩 1층 구내식당" />
             </div>
-
             <div class="contact-form-group">
               <label for="reg-message">요청사항</label>
               <textarea id="reg-message" placeholder="예) 1일 2식, 예산 범위, 알레르기/종교식, 특이사항 등"></textarea>
             </div>
 
             <div class="contact-buttons">
-              <a href="tel:01063641170" class="btn-full-primary">📞 전화로 상담하기<br> (010-6364-1170)</a>
+              <a href="tel:01063641170" class="btn-full-primary">
+                📞 전화로 상담하기<br> (010-6364-1170)
+              </a>
+
               <div class="contact-buttons-row">
                 <a href="sms:01063641170" class="btn-contact-sub">💬 문자 문의</a>
                 <a href="https://open.kakao.com/o/pPvpjF2h" class="btn-contact-sub" target="_blank" rel="noopener noreferrer">🟡 카카오채널 웰빙푸드</a>
+                <a href="https://blog.naver.com/jibbab_kr" class="btn-contact-sub" target="_blank" rel="noopener noreferrer">🟡 블로그</a>
+                <a href="https://new.smartplace.naver.com/bizes/booking/519036" class="btn-contact-sub" target="_blank" rel="noopener noreferrer">📌 스마트플레이스</a>
               </div>
             </div>
 
             <div class="form-submit-wrapper">
-              <button type="submit" class="form-submit-btn">폼으로 단체급식 문의 전송하기</button>
-              <p class="form-submit-hint">부담 없이 문의 남겨 주세요. 전송 후 담당자가 내용을 확인하고 연락드립니다.</p>
+              <button type="submit" class="form-submit-btn">
+                폼으로 단체급식 문의 전송하기
+              </button>
+              <p class="form-submit-hint">
+                부담 없이 문의 남겨 주세요. 전송 후 담당자가 내용을 확인하고 연락드립니다.
+              </p>
             </div>
           </form>
 
@@ -837,16 +1589,14 @@
               <label for="evt-phone">연락처</label>
               <input id="evt-phone" type="tel" placeholder="예) 010-6364-1170" />
             </div>
-
             <div class="contact-form-group">
               <label>희망 서비스 형태</label>
               <div class="option-row">
-                <label><input type="radio" name="evt-service" value="출장뷔페(행사)" checked /> 출장뷔페(행사)</label>
-                <label><input type="radio" name="evt-service" value="도시락" /> 행사용 도시락</label>
-                <label><input type="radio" name="evt-service" value="기타" /> 기타</label>
+                <label><input type="radio" name="evt-service" value="출장뷔페(행사)" checked />출장뷔페(행사)</label>
+                <label><input type="radio" name="evt-service" value="도시락" />행사용 도시락</label>
+                <label><input type="radio" name="evt-service" value="기타" />기타</label>
               </div>
             </div>
-
             <div class="contact-form-group">
               <label for="evt-date">행사 날짜</label>
               <input id="evt-date" type="date" />
@@ -873,18 +1623,27 @@
             </div>
 
             <div class="contact-buttons">
-              <a href="tel:01063641170" class="btn-full-primary">📞 전화로 행사 상담하기<br> (010-6364-1170)</a>
+              <a href="tel:01063641170" class="btn-full-primary">
+                📞 전화로 행사 상담하기<br> (010-6364-1170)
+              </a>
               <div class="contact-buttons-row">
                 <a href="sms:01063641170" class="btn-contact-sub">💬 행사 관련 문자 문의</a>
                 <a href="https://open.kakao.com/o/pPvpjF2h" class="btn-contact-sub" target="_blank" rel="noopener noreferrer">🟡 카카오채널 웰빙푸드</a>
+                <a href="https://blog.naver.com/jibbab_kr" class="btn-contact-sub" target="_blank" rel="noopener noreferrer">🟡 블로그</a>
+                <a href="https://new.smartplace.naver.com/bizes/booking/519036" class="btn-contact-sub" target="_blank" rel="noopener noreferrer">📌 스마트플레이스</a>
               </div>
             </div>
 
             <div class="form-submit-wrapper">
-              <button type="submit" class="form-submit-btn">폼으로 행사/뷔페 문의 전송하기</button>
-              <p class="form-submit-hint">부담 없이 문의 남겨 주세요. 전송 후 담당자가 행사 내용을 확인하고 연락드립니다.</p>
+              <button type="submit" class="form-submit-btn">
+                폼으로 행사/뷔페 문의 전송하기
+              </button>
+              <p class="form-submit-hint">
+                부담 없이 문의 남겨 주세요. 전송 후 담당자가 행사 내용을 확인하고 연락드립니다.
+              </p>
             </div>
           </form>
+
         </div>
 
         <div class="contact-info-card">
@@ -901,16 +1660,12 @@
             <a href="mailto:skyballpd@gmail.com">skyballpd@gmail.com</a>
           </div>
           <div class="contact-info-item">
-            <strong>스마트플레이스</strong><br />
-            <a href="https://new.smartplace.naver.com/bizes/booking/519036" target="_blank" rel="noopener noreferrer">📌 네이버 스마트플레이스 바로가기</a>
-          </div>
-          <div class="contact-info-item">
-            <strong>블로그</strong><br />
-            <a href="https://blog.naver.com/jibbab_kr" target="_blank" rel="noopener noreferrer">🟡 네이버 블로그 바로가기</a>
-          </div>
-          <div class="contact-info-item">
             <strong>주소</strong><br />
             경기도 부천시 (사업자등록증 기재 주소)
+            &nbsp;|&nbsp;
+            <a href="https://blog.naver.com/jibbab_kr" target="_blank" rel="noopener noreferrer">🟡 블로그</a>
+            &nbsp;|&nbsp;
+            <a href="https://new.smartplace.naver.com/bizes/booking/519036" target="_blank" rel="noopener noreferrer">📌 스마트플레이스</a>
           </div>
 
           <div class="contact-highlight">
@@ -927,31 +1682,51 @@
       <div class="footer-top">
         <div>
           <span class="footer-company">
-            <a href="https://script.google.com/macros/s/AKfycbzy1dhDgYGoCZAGHXoAdY4miuXLMCp0mo8px_L7R2FCosEpoIpeggVWiDzeybmwwtHLsg/exec?" target="_blank" rel="noopener noreferrer">웰빙푸드</a>
+            <a href="https://script.google.com/macros/s/AKfycbzy1dhDgYGoCZAGHXoAdY4miuXLMCp0mo8px_L7R2FCosEpoIpeggVWiDzeybmwwtHLsg/exec?"
+               target="_blank" rel="noopener noreferrer">웰빙푸드</a>
           </span>
           &nbsp;|&nbsp; 대표 : 전금숙
         </div>
-        <div>사업자등록번호 : 896-23-01923</div>
+        <div>
+          사업자등록번호 : 896-23-01923
+        </div>
       </div>
-
       <div>
-        주소 : 경기도 부천시 (사업자등록증 기재 주소)
-        · 전화 : 010-6364-1170
-        · 이메일 : skyballpd@gmail.com
+        주소 : 경기도 부천시 (사업자등록증 기재 주소) · 전화 : 010-6364-1170 · 이메일 : skyballpd@gmail.com
+        &nbsp;|&nbsp;
+        <a href="https://blog.naver.com/jibbab_kr" target="_blank" rel="noopener noreferrer">🟡 블로그</a>
+        &nbsp;|&nbsp;
+        <a href="https://new.smartplace.naver.com/bizes/booking/519036" target="_blank" rel="noopener noreferrer">📌 스마트플레이스</a>
       </div>
-
-      <div class="chip-links" style="margin-top:0.6rem;">
-        <a class="chip chip-green" href="https://new.smartplace.naver.com/bizes/booking/519036" target="_blank" rel="noopener noreferrer">📌 스마트플레이스</a>
-        <a class="chip chip-accent" href="https://blog.naver.com/jibbab_kr" target="_blank" rel="noopener noreferrer">🟡 블로그</a>
+      <div class="footer-bottom">
+        © 웰빙푸드. All rights reserved.
       </div>
-
-      <div class="footer-bottom">© 웰빙푸드. All rights reserved.</div>
     </div>
   </footer>
 
-  <!-- UI 동작 스크립트 -->
+  <!-- ✅ 포트폴리오 링크 선택 모달 (블로그/스마트플레이스) -->
+  <div class="link-modal" id="linkModal" aria-hidden="true">
+    <div class="link-modal-card" role="dialog" aria-modal="true" aria-labelledby="linkModalTitle">
+      <div class="link-modal-title" id="linkModalTitle">포트폴리오 연결</div>
+      <div class="link-modal-desc" id="linkModalDesc">어디에서 보실까요?</div>
+
+      <div class="link-modal-actions">
+        <button type="button" class="link-modal-btn primary" id="goBlogBtn">🟡 블로그로 보기</button>
+        <button type="button" class="link-modal-btn" id="goSmartBtn">📌 스마트플레이스로 보기</button>
+      </div>
+
+      <div class="link-modal-close">
+        <button type="button" id="closeModalBtn">닫기</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 인트로 / 탭 / 슬라이더 스크립트 -->
   <script>
     (function () {
+      const SMARTPLACE_URL = "https://new.smartplace.naver.com/bizes/booking/519036";
+      const BLOG_HOME = "https://blog.naver.com/jibbab_kr";
+
       // -----------------------------
       // Intro splash (first visit only)
       // -----------------------------
@@ -962,19 +1737,28 @@
       function reallyHideIntro() {
         if (!intro) return;
         intro.classList.add("hide");
-        setTimeout(() => { intro.style.display = "none"; }, 700);
+        setTimeout(() => {
+          intro.style.display = "none";
+        }, 700);
       }
 
       function hideIntro() {
-        try { localStorage.setItem(INTRO_KEY, "1"); } catch (e) {}
+        try {
+          localStorage.setItem(INTRO_KEY, "1");
+        } catch (e) {
+          console.warn("localStorage unavailable", e);
+        }
         reallyHideIntro();
       }
 
       window.addEventListener("load", () => {
         if (!intro) return;
         let seen = null;
-        try { seen = localStorage.getItem(INTRO_KEY); } catch (e) { seen = null; }
-
+        try {
+          seen = localStorage.getItem(INTRO_KEY);
+        } catch (e) {
+          seen = null;
+        }
         if (seen === "1") {
           reallyHideIntro();
         } else {
@@ -982,7 +1766,9 @@
         }
       });
 
-      if (introSkip) introSkip.addEventListener("click", hideIntro);
+      if (introSkip) {
+        introSkip.addEventListener("click", hideIntro);
+      }
 
       // -----------------------------
       // Mobile nav toggle
@@ -992,14 +1778,6 @@
       if (navToggle && navMenu) {
         navToggle.addEventListener("click", () => {
           navMenu.classList.toggle("open");
-        });
-
-        // ✅ 메뉴 클릭하면 모바일 메뉴 자동 닫힘(UX 개선)
-        navMenu.addEventListener("click", (e) => {
-          const t = e.target;
-          if (t && t.tagName === "A" && navMenu.classList.contains("open")) {
-            navMenu.classList.remove("open");
-          }
         });
       }
 
@@ -1012,12 +1790,6 @@
         quickToggle.addEventListener("click", () => {
           quickPanel.classList.toggle("open");
         });
-
-        // ✅ 바깥 클릭 시 닫기
-        document.addEventListener("click", (e) => {
-          const within = quickPanel.contains(e.target) || quickToggle.contains(e.target);
-          if (!within) quickPanel.classList.remove("open");
-        });
       }
 
       // -----------------------------
@@ -1029,13 +1801,16 @@
 
       function activateTab(target) {
         tabButtons.forEach((b) => b.classList.remove("active"));
-
         if (target === "regular") {
-          tabButtons.forEach((b) => { if (b.dataset.target === "regular") b.classList.add("active"); });
+          tabButtons.forEach((b) => {
+            if (b.dataset.target === "regular") b.classList.add("active");
+          });
           if (regularForm) regularForm.classList.remove("hidden");
           if (eventForm) eventForm.classList.add("hidden");
         } else {
-          tabButtons.forEach((b) => { if (b.dataset.target === "event") b.classList.add("active"); });
+          tabButtons.forEach((b) => {
+            if (b.dataset.target === "event") b.classList.add("active");
+          });
           if (eventForm) eventForm.classList.remove("hidden");
           if (regularForm) regularForm.classList.add("hidden");
         }
@@ -1043,7 +1818,8 @@
 
       tabButtons.forEach((btn) => {
         btn.addEventListener("click", () => {
-          activateTab(btn.getAttribute("data-target"));
+          const target = btn.getAttribute("data-target");
+          activateTab(target);
         });
       });
 
@@ -1071,7 +1847,9 @@
           e.preventDefault();
           const intent = btn.getAttribute("data-intent");
           const contactSection = document.getElementById("contact");
-          if (contactSection) contactSection.scrollIntoView({ behavior: "smooth", block: "start" });
+          if (contactSection) {
+            contactSection.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
           handleServiceIntent(intent);
         });
       });
@@ -1090,7 +1868,10 @@
         let stopped = false;
 
         function stopAuto() {
-          if (timer) { clearInterval(timer); timer = null; }
+          if (timer) {
+            clearInterval(timer);
+            timer = null;
+          }
           stopped = true;
         }
 
@@ -1125,11 +1906,94 @@
           }
         });
 
-        if (window.innerWidth <= breakpoint) startAuto();
+        if (window.innerWidth <= breakpoint) {
+          startAuto();
+        }
       }
 
       setupAutoSlider(".portfolio-grid", ".portfolio-card", 768, 3500);
       setupAutoSlider(".gallery-grid", ".gallery-item", 768, 3200);
+
+      // =========================================================
+      // ✅ (추가) 포트폴리오 카드 클릭 → 블로그/스마트플레이스 선택 모달
+      // =========================================================
+      const linkModal = document.getElementById("linkModal");
+      const goBlogBtn = document.getElementById("goBlogBtn");
+      const goSmartBtn = document.getElementById("goSmartBtn");
+      const closeModalBtn = document.getElementById("closeModalBtn");
+      const linkModalTitle = document.getElementById("linkModalTitle");
+      const linkModalDesc = document.getElementById("linkModalDesc");
+
+      let pendingBlogUrl = "";
+      let pendingSmartUrl = "";
+
+      function openLinkModal(title, blogUrl, smartUrl) {
+        if (!linkModal) return;
+
+        pendingBlogUrl = blogUrl || BLOG_HOME;
+        pendingSmartUrl = smartUrl || SMARTPLACE_URL;
+
+        if (linkModalTitle) linkModalTitle.textContent = title ? `포트폴리오: ${title}` : "포트폴리오 연결";
+        if (linkModalDesc) {
+          linkModalDesc.textContent = blogUrl
+            ? "블로그 후기 글로 바로 이동할까요?"
+            : "블로그(포트폴리오/후기) 또는 스마트플레이스에서 확인하실 수 있어요.";
+        }
+
+        linkModal.classList.add("open");
+        linkModal.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeLinkModal() {
+        if (!linkModal) return;
+        linkModal.classList.remove("open");
+        linkModal.setAttribute("aria-hidden", "true");
+        document.body.style.overflow = "";
+      }
+
+      document.querySelectorAll(".portfolio-card").forEach((card) => {
+        card.style.cursor = "pointer";
+
+        card.addEventListener("click", () => {
+          const title = card.getAttribute("data-title") || card.querySelector(".portfolio-title")?.textContent || "";
+          const blogUrl = card.getAttribute("data-blog") || "";
+          const smartUrl = card.getAttribute("data-smartplace") || SMARTPLACE_URL;
+          openLinkModal(title.trim(), blogUrl.trim(), smartUrl.trim());
+        });
+
+        card.setAttribute("tabindex", "0");
+        card.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            card.click();
+          }
+        });
+      });
+
+      if (goBlogBtn) {
+        goBlogBtn.addEventListener("click", () => {
+          if (pendingBlogUrl) window.open(pendingBlogUrl, "_blank", "noopener,noreferrer");
+          closeLinkModal();
+        });
+      }
+      if (goSmartBtn) {
+        goSmartBtn.addEventListener("click", () => {
+          if (pendingSmartUrl) window.open(pendingSmartUrl, "_blank", "noopener,noreferrer");
+          closeLinkModal();
+        });
+      }
+      if (closeModalBtn) closeModalBtn.addEventListener("click", closeLinkModal);
+
+      if (linkModal) {
+        linkModal.addEventListener("click", (e) => {
+          if (e.target === linkModal) closeLinkModal();
+        });
+      }
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && linkModal?.classList.contains("open")) closeLinkModal();
+      });
     })();
   </script>
 
@@ -1157,11 +2021,12 @@
         try {
           const res = await fetch(WEBAPP_URL, {
             method: "POST",
-            body: JSON.stringify(data),
-            headers: { "Content-Type": "text/plain;charset=utf-8" }
+            body: JSON.stringify(data)
           });
 
-          if (!res.ok) throw new Error("응답 코드: " + res.status);
+          if (!res.ok) {
+            throw new Error("응답 코드: " + res.status);
+          }
 
           if (button) {
             button.classList.remove("is-sending");
@@ -1181,7 +2046,7 @@
         }
       }
 
-      // 상시 단체급식
+      // ✅ 상시 단체급식 폼
       const regularForm = document.getElementById("contact-regular");
       if (regularForm) {
         const regularButton = regularForm.querySelector(".form-submit-btn");
@@ -1195,7 +2060,9 @@
             phone: document.getElementById("reg-phone")?.value || "",
             service: (document.querySelector("input[name='reg-service']:checked") || {}).value || "",
             headcount: document.getElementById("reg-headcount")?.value || "",
-            meals: Array.from(document.querySelectorAll("input[name='reg-meals']:checked")).map(x => x.value).join(", "),
+            meals: Array.from(document.querySelectorAll("input[name='reg-meals']:checked"))
+              .map(x => x.value)
+              .join(", "),
             date: document.getElementById("reg-date")?.value || "",
             place: document.getElementById("reg-place")?.value || "",
             message: document.getElementById("reg-message")?.value || "",
@@ -1206,7 +2073,7 @@
         });
       }
 
-      // 행사 · 출장뷔페
+      // ✅ 행사 · 출장뷔페 폼
       const eventForm = document.getElementById("contact-event");
       if (eventForm) {
         const eventButton = eventForm.querySelector(".form-submit-btn");
@@ -1233,5 +2100,6 @@
       }
     })();
   </script>
+
 </body>
 </html>
